@@ -74,24 +74,27 @@ hr {
 }
 
 #__nuxt {
-  width: 92%;
+  width: 85%;
   height: 100%;
   max-width: 1024px;
   margin: 0 auto;
-  padding: 0 0 0 1rem;
+  padding: 0 1rem 0 1rem;
   isolation: isolate;
 
   & > section {
-    padding: 2rem 0;
     display: flex;
+    padding-top: 2rem;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     header > a {
       color: var(--primary);
+      border-bottom: var(--primary) 2px solid;
       font-weight: bold;
     }
-
+    
     nav {
+      margin: 1rem 0;
       display: flex;
       align-items: center;
       gap: 0.5rem;
@@ -124,11 +127,12 @@ hr {
     }
     .contact {
       margin-bottom: 2rem;
-      
+
       span {
         margin-top: 1.5em;
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         gap: 1rem;
 
         a {
@@ -143,15 +147,20 @@ hr {
     }
 
     & > .skills {
-      h2{
+      h2 {
         margin: 1rem 0;
       }
-      
+
       ul {
         display: grid;
-        grid-template-columns: repeat(6, 160px);
-        grid-auto-columns: 150px;
+        // grid-template-columns: repeat(6, 160px);
+        // grid-auto-columns: 150px;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         gap: 1em;
+
+        li{
+          padding: 0.5em;
+        }
       }
     }
 
@@ -165,8 +174,7 @@ hr {
 
       .repo-list {
         display: grid;
-        grid-template-columns: repeat(4, 240px);
-        grid-auto-columns: 200px;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         gap: 1rem;
 
         a {

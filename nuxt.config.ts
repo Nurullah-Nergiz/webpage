@@ -2,6 +2,6 @@
 export default defineNuxtConfig({
     app: {
         head: {
-        title:'Nurullah Nergiz'
+            title: 'Nurullah Nergiz',
     }}
 })

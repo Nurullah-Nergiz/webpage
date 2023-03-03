@@ -15,6 +15,12 @@
           class="bx bxl-github"
           >Github
         </a>
+        <a
+          href="https://www.linkedin.com/in/nurullah-nergiz-375674221/"
+          target="_blank"
+          class="bx bxl-linkedin"
+          >Linkedin
+        </a>
       </span>
     </div>
     <h2>Yeneklerim</h2>
