@@ -1,4 +1,9 @@
-<script setup></script>
+<script>
+export default {
+  mounted() {
+  },
+};
+</script>
 
 <template>
   <section class="skills">
@@ -30,6 +35,7 @@
       <li>Javascript</li>
       <li>Tailwindcss</li>
       <li>React</li>
+      <li>React-native</li>
       <li>Vue3</li>
       <li>Vuex</li>
       <li>Vuetur</li>
