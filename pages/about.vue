@@ -1,22 +1,17 @@
-<script setup>
+#<script setup>
 useHead({
   title: "Nurullah Nergiz Hakkımda Sayfası",
 });
 </script>
 <template>
   <section class="about">
-    <div>
       <h2>
         <b>Merhaba Ben Nurullah</b><br />
         Konya'da yaşayan bir yazılımcıyım
       </h2>
       <br />
-    </div>
     <div class="descriptions">
-      2016 yılından programlamaya başladım . C# ile başladım. Html,
-      Css,JS,Asp.net ve php dillerini öğrenerek mezun oldum ve yaz stajı yaptım
-      ve bu programları kullandım . Mezun olduktan sonrada vue,epressjs,threejs
-      kullanarak örnek projeler geliştirdim.
+      Ben bir web geliştiricisiyim ısektörde çalışıyorum. Bu portföyüm, web tasarım ve geliştirme projelerimdeki yeteneklerimi ve deneyimimi sergiliyor. Front-end teknolojileri, HTML, CSS ve JavaScript'te derin bir bilgiye sahibim ve React veft Vue gibi modern JavaScript çerçevelerinde deneyimliyim. Back-end olarak Node.js, Express ve MongoDB gibi teknolojilerde de deneyimim bulunmaktadır. Bu projeler, müşterilerime veya kişisel ilgi alanlarıma yönelik işleri içerir. Yaratıcı fikirlerimle ve problem çözme yeteneğimle birlikte güzel, işlevsel ve kullanıcı dostu web siteleri geliştiriyorum. Siz de, projelerim hakkında daha fazla bilgi edinmek için sayfaları ziyaret edebilirsiniz. İletişime geçmek veya işbirliği yapmak için bana e-posta veya LinkedIn aracılığıyla ulaşabilirsiniz.u
     </div>
   </section>
 </template>
