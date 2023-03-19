@@ -10,21 +10,23 @@ export default {
     <div class="contact">
       <h1>İletişim</h1>
       <span>
-        <a href="tel:+905457241456" class="bx bx-phone">Telefon</a>
+        <a href="tel:+905457241456" class="bx bx-phone">
+          <p>Telefon</b>
+        </a>
         <a href="mailto:nurullah-nergiz@hotmail.com" class="bx bx-envelope"
-          >Email
+          ><p>Email</b>
         </a>
         <a
           href="https://github.com/Nurullah-Nergiz/"
           target="_blank"
           class="bx bxl-github"
-          >Github
+          ><p>Github</b>
         </a>
         <a
           href="https://www.linkedin.com/in/nurullah-nergiz-375674221/"
           target="_blank"
           class="bx bxl-linkedin"
-          >Linkedin
+          ><p>Linkedin</b>
         </a>
       </span>
     </div>
@@ -32,6 +34,7 @@ export default {
     <ul>
       <li>Html5</li>
       <li>Css3</li>
+      <li>Scss</li>
       <li>Javascript</li>
       <li>Tailwindcss</li>
       <li>React</li>
@@ -40,10 +43,11 @@ export default {
       <li>Vuex</li>
       <li>Vuetur</li>
       <li>Nuxtjs</li>
+      <li>Nextjs</li>
       <li>Threejs</li>
       <li>Expressjs</li>
       <li>Electronjs</li>
-      <li>docker</li>
+      <li>Docker</li>
       <li>Mongodb</li>
       <li>MySql</li>
       <li>Php</li>
