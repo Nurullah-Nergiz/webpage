@@ -12,7 +12,7 @@ useHead({
     </h2>
     <br />
     <div class="descriptions">
-      Ben bir web geliştiricisiyim ısektörde çalışıyorum. Bu portföyüm, web
+      Ben bir web geliştiricisiyim. Bu portföyüm, web
       tasarım ve geliştirme projelerimdeki yeteneklerimi ve deneyimimi
       sergiliyor. Front-end teknolojileri, HTML, CSS ve JavaScript'te derin bir
       bilgiye sahibim ve React Vue gibi modern JavaScript çerçevelerinde
