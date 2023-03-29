@@ -1,7 +1,7 @@
 #
 <script setup>
 useHead({
-  title: "Nurullah Nergiz Hakkımda Sayfası",
+  title: "Nurullah Nergiz Yeteneklerim Sayfası",
 });
 </script>
 <template>
