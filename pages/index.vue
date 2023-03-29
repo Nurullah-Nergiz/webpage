@@ -6,18 +6,11 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: `Ben bir web geliştiricisiyim. Bu portföyüm, web
-          tasarım ve geliştirme projelerimdeki yeteneklerimi ve deneyimimi
-          sergiliyor. Front-end teknolojileri, HTML, CSS ve JavaScript'te derin bir
-          bilgiye sahibim ve React Vue gibi modern JavaScript çerçevelerinde
-          deneyimliyim. Back-end olarak Node.js, Express ve MongoDB gibi
-          teknolojilerde de deneyimim bulunmaktadır. Bu projeler, müşterilerime veya
-          kişisel ilgi alanlarıma yönelik işleri içerir. Yaratıcı fikirlerimle ve
-          problem çözme yeteneğimle birlikte güzel, işlevsel ve kullanıcı dostu web
-          siteleri geliştiriyorum. Siz de, projelerim hakkında daha fazla bilgi
-          edinmek için sayfaları ziyaret edebilirsiniz. İletişime geçmek veya
-          işbirliği yapmak için bana e-posta veya LinkedIn aracılığıyla
-          ulaşabilirsiniz.`,
+          content: `
+          Benim kişisel portfolyo sitem, yazılım geliştirme projelerim hakkında detaylı bilgi içerir.
+          Bu projeler, farklı programlama dilleri ve teknolojiler kullanılarak geliştirilmiştir.
+          Uzmanlık alanlarım arasında web uygulama geliştirme,
+          veritabanı tasarımı ve API entegrasyonu bulunmaktadır.`,
         },
       ],
     });
@@ -33,18 +26,17 @@ export default {
     </h2>
     <br />
     <div class="descriptions">
-      Ben bir web geliştiricisiyim. Bu portföyüm, web
-      tasarım ve geliştirme projelerimdeki yeteneklerimi ve deneyimimi
-      sergiliyor. Front-end teknolojileri, HTML, CSS ve JavaScript'te derin bir
-      bilgiye sahibim ve React Vue gibi modern JavaScript çerçevelerinde
-      deneyimliyim. Back-end olarak Node.js, Express ve MongoDB gibi
-      teknolojilerde de deneyimim bulunmaktadır. Bu projeler, müşterilerime veya
-      kişisel ilgi alanlarıma yönelik işleri içerir. Yaratıcı fikirlerimle ve
-      problem çözme yeteneğimle birlikte güzel, işlevsel ve kullanıcı dostu web
-      siteleri geliştiriyorum. Siz de, projelerim hakkında daha fazla bilgi
-      edinmek için sayfaları ziyaret edebilirsiniz. İletişime geçmek veya
-      işbirliği yapmak için bana e-posta veya LinkedIn aracılığıyla
-      ulaşabilirsiniz.
+      Ben bir web geliştiricisiyim. Bu portföyüm, web tasarım ve geliştirme
+      projelerimdeki yeteneklerimi ve deneyimimi sergiliyor. Front-end
+      teknolojileri, HTML, CSS ve JavaScript'te derin bir bilgiye sahibim ve
+      React Vue gibi modern JavaScript çerçevelerinde deneyimliyim. Back-end
+      olarak Node.js, Express ve MongoDB gibi teknolojilerde de deneyimim
+      bulunmaktadır. Bu projeler, müşterilerime veya kişisel ilgi alanlarıma
+      yönelik işleri içerir. Yaratıcı fikirlerimle ve problem çözme yeteneğimle
+      birlikte güzel, işlevsel ve kullanıcı dostu web siteleri geliştiriyorum.
+      Siz de, projelerim hakkında daha fazla bilgi edinmek için sayfaları
+      ziyaret edebilirsiniz. İletişime geçmek veya işbirliği yapmak için bana
+      e-posta veya LinkedIn aracılığıyla ulaşabilirsiniz.
     </div>
   </section>
 </template>
