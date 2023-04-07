@@ -36,7 +36,7 @@ export default {
       birlikte güzel, işlevsel ve kullanıcı dostu web siteleri geliştiriyorum.
       Siz de, projelerim hakkında daha fazla bilgi edinmek için sayfaları
       ziyaret edebilirsiniz. İletişime geçmek veya işbirliği yapmak için bana
-      e-posta veya LinkedIn aracılığıyla ulaşabilirsiniz. <br />
+      e-posta veya LinkedIn aracılığıyla ulaşabilirsiniz. <br /><br />
     </div>
   </section>
   <section class="contact">
