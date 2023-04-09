@@ -49,13 +49,13 @@ export default {
         href="https://github.com/Nurullah-Nergiz/"
         target="_blank"
         class="bx bxl-github"
-        ><p>Github</p>
+        ><p></p>
       </a>
       <a
         href="https://www.linkedin.com/in/nurullah-nergiz-375674221/"
         target="_blank"
         class="bx bxl-linkedin"
-        ><p>Linkedin</p>
+        ><p></p>
       </a>
     </span>
   </section>
