@@ -2,15 +2,13 @@
 export default {
   setup() {
     useHead({
+			title:'Nurullah Nergiz - Full Stack Web Developer',
       meta: [
         {
           hid: "description",
           name: "description",
           content: `
-          Benim kişisel portfolyo sitem, yazılım geliştirme projelerim hakkında detaylı bilgi içerir.
-          Bu projeler, farklı programlama dilleri ve teknolojiler kullanılarak geliştirilmiştir.
-          Uzmanlık alanlarım arasında web uygulama geliştirme,
-          veritabanı tasarımı ve API entegrasyonu bulunmaktadır.`,
+          Nurullah Nergiz, son teknolojileri takip eden bir web yazılımcısıdır. Web sitelerinizin kullanıcı deneyimini geliştirerek, markanızın bilinirliğini artırmak için sizinle çalışmak için sabırsızlanıyor. İletişim için nurullah-nergiz@hotmail.com adresine e-posta gönderebilirsiniz.`,
         },
       ],
     });
