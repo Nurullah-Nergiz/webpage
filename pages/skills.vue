@@ -1,8 +1,12 @@
 #
-<script setup>
-useHead({
-  title: "Nurullah Nergiz Yeteneklerim Sayfası",
-});
+<script>
+export default {
+  setup() {
+    useHead({
+      title: "Nurullah Nergiz Yeteneklerim Sayfası",
+    });
+  },
+};
 </script>
 <template>
   <section class="skills">
