@@ -78,7 +78,7 @@ export default {
         ><p></p>
       </a>
       <a
-        href="https://www.linkedin.com/in/nurullah-nergiz-375674221/"
+        href="https://www.linkedin.com/in/nurullah-nergiz/"
         target="_blank"
         class="bx bxl-linkedin"
         ><p></p>
@@ -87,4 +87,3 @@ export default {
   </section>
 </template>
 
-<style></style>
