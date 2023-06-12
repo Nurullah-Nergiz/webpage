@@ -38,12 +38,8 @@ export default {
     <h1><b>Merhaba Ben Nurullah</b><br /></h1>
     <br />
     <div class="descriptions">
-      o Bir web yazılımcısıyım. Yaklaşık 5 yıldır bu alanda çalışıyorum ve bu
-      süre boyunca birçok farklı proje için çalışma fırsatım oldu. Web
-      geliştirme işine nasıl girdim? Aslında, ben her zaman bilgisayar
-      teknolojilerine ilgi duydum ve bu alanda kendimi geliştirmek istedim.
-      Birçok farklı web geliştirme şirketinde çalıştım. Bu deneyimler, şu anda
-      sahip olduğumuz bilgi ve becerilerin çoğunu geliştirmeme yardımcı oldu.
+	    Yaklaşık 5 yıldır bu alanda çalışıyorum ve bu
+      süre boyunca birçok farklı proje için çalışma fırsatım oldu. 
       Web geliştirme alanındaki en büyük tutkularımdan biri, web sitelerinin
       kullanıcı deneyimini geliştirmektir. Kullanıcılar için daha iyi bir
       deneyim sunmak için, her zaman araştırmalar yapıyor ve en son
@@ -58,9 +54,7 @@ export default {
       ilerlemesini takip edebilecek olmasıdır. Ayrıca, projelerin her aşamasında
       müşterilerimle açık bir iletişim kurarım, böylece her zaman aynı sayfada
       olduğumuzdan emin olurum. Web geliştirme alanındaki uzmanlığımla, size
-      özel bir web sitesi tasarlamak ve geliştirmek için sabırsızlanıyorum. Eğer
-      benimle çalışmak isterseniz, bana \[email protected] adresinden
-      ulaşabilirsiniz. Teşekkür ederim!
+      özel bir web sitesi tasarlamak ve geliştirmek için sabırsızlanıyorum.
 
       <br /><br />
     </div>
