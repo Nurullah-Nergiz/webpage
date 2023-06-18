@@ -36,27 +36,18 @@ export default {
 <template>
   <section class="about">
     <h1><b>Merhaba Ben Nurullah</b><br /></h1>
-    <br />
     <div class="descriptions">
 	    Yaklaşık 5 yıldır bu alanda çalışıyorum ve bu
       süre boyunca birçok farklı proje için çalışma fırsatım oldu. 
       Web geliştirme alanındaki en büyük tutkularımdan biri, web sitelerinin
       kullanıcı deneyimini geliştirmektir. Kullanıcılar için daha iyi bir
       deneyim sunmak için, her zaman araştırmalar yapıyor ve en son
-      teknolojileri takip ediyorum. Kullanıcı dostu web siteleri tasarlama
-      konusundaki uzmanlığım, müşterilerimin hedef kitlelerine erişmelerine
-      yardımcı olurken, onların marka bilinirliğini de artırıyor. Benim için web
+      teknolojileri takip ediyorum. Benim için web
       geliştirme sadece bir iş değil, bir tutku. Kendimi sürekli olarak
-      geliştiriyor ve daha iyi olmak için çaba sarf ediyorum. Müşterilerimle
-      işbirliği yaparken, onların ihtiyaçlarını anlayarak ve onlara özel
-      çözümler sunarak işlerini benzersiz bir şekilde tasarlıyorum. Benimle
-      çalışmanın avantajlarından biri, müşterilerimin her zaman projelerinin
-      ilerlemesini takip edebilecek olmasıdır. Ayrıca, projelerin her aşamasında
+      geliştiriyor ve daha iyi olmak için çaba sarf ediyorum. Ayrıca, projelerin her aşamasında
       müşterilerimle açık bir iletişim kurarım, böylece her zaman aynı sayfada
       olduğumuzdan emin olurum. Web geliştirme alanındaki uzmanlığımla, size
       özel bir web sitesi tasarlamak ve geliştirmek için sabırsızlanıyorum.
-
-      <br /><br />
     </div>
   </section>
   <section class="contact">
@@ -80,4 +71,3 @@ export default {
     </span>
   </section>
 </template>
-
