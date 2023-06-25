@@ -1,5 +1,5 @@
 <template>
     <header>
-      <NuxtLink to="/" active-class="active">&lt;Nurullah /&gt;</NuxtLink>
+      <NuxtLink to="/" active-class="active">Nurullah</NuxtLink>
     </header>
 </template>
