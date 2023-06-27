@@ -1,5 +1,6 @@
 {
-    "printWidth": 80,
-    "bracketSpacing": true,
-    "bracketLine": true
+  "printWidth": 50,
+  "bracketSpacing": true,
+  "bracketLine": true,
+  "singleAttributePerLine": true
 }

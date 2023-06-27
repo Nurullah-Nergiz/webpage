@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,500&display=swap");
+@import url("https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    color: #bbb;
+    background: rgb(17, 17, 17);
+    background: linear-gradient(
+      145deg,
+      rgba(17, 17, 17, 1) 0%,
+      rgba(24, 24, 24, 1) 100%
+    );
+    font-family: "Poppins", sans-serif;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+}
+
+@layer components {
+  #__nuxt {
+    width: min(92%, 1024px);
+    height: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -3,14 +3,17 @@ import { defineNuxtConfig } from "nuxt/config";
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
-  modules: ["nuxt-simple-sitemap", "nuxt-simple-robots"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "nuxt-simple-sitemap",
+    "nuxt-simple-robots",
+  ],
   sitemap: {
     siteUrl: "https://nurullahnergiz.com/",
   },
   nitro: {
     prerender: {
       crawlLinks: true,
-
       routes: ["/"],
     },
   },
@@ -29,18 +32,17 @@ export default defineNuxtConfig({
           name: "author",
           content: "Nurullah Nergiz",
         },
-        { name: "robots", content: "index, follow" },
+        {
+          name: "robots",
+          content: "index, follow",
+        },
         {
           name: "keywords",
-          content: `Frontend developer,
-              Web development,
-              HTML,
-              CSS,
-              JavaScript,
-              Mobile-friendly,
-              React,
-              Vue.js,
-              Git`,
+          content: `Nurullah Nergiz, Frontend developer`,
+        },
+        {
+          name: "og:title",
+          content: "Nurullah nergiz",
         },
       ],
     },

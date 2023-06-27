@@ -2,11 +2,11 @@
 
 </script>
 <template>
-  <section>
-    <Header/>
+  <section class="h-16 flex flex-wrap justify-between items-center">
+    <Header />
     <Nav />
   </section>
-  <main>
+  <main class="pt-3 flex-1">
     <slot />
   </main>
   <Footer />

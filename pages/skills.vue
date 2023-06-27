@@ -12,11 +12,20 @@ export default {
   <section class="skills">
     <h1>Yeteneklerim</h1>
     <ul>
+      <li>Geliştirme Dilleri: Html5,Css3,Javascript,C#,Php</li>
+      <li>Frameworkler: Nextjs,Nuxtjs,Threejs,Expressjs Electronjs,Asp.Net</li>
+      <li>Kütüphaneler: React,Vue, Tailwindcss</li>
+      <li>Veri Tabanları: MySql, Mongodb</li>
+      <li>Teknolojiler: Docker</li>
+    </ul>
+  </section>
+  <!-- <hr>
+    <ul>
       <li>Html5</li>
       <li>Css3</li>
       <li>Scss</li>
-      <li>Javascript</li>
       <li>Tailwindcss</li>
+      <li>Javascript</li>
       <li>React</li>
       <li>React-native</li>
       <li>Vue3</li>
@@ -34,5 +43,5 @@ export default {
       <li>Asp.net</li>
       <li>Windows Forms</li>
     </ul>
-  </section>
+  </section> -->
 </template>

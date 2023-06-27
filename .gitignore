@@ -1,8 +1,11 @@
 node_modules
 *.log*
+package-lock.json
 .nuxt
 .nitro
 .cache
 .output
 .env
 dist
+ui.jpeg
+
