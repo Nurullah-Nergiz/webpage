@@ -19,7 +19,7 @@ export default defineNuxtConfig({
   },
   robots: {
     indexable: true,
-    sitemap: ["/sitemap.xml"],
+    // sitemap: ["/sitemap.xml"],
   },
   app: {
     head: {
