@@ -16,7 +16,7 @@ export default {
       <li>Frameworkler: Nextjs,Nuxtjs,Threejs,Expressjs Electronjs,Asp.Net</li>
       <li>Kütüphaneler: React,Vue, Tailwindcss</li>
       <li>Veri Tabanları: MySql, Mongodb</li>
-      <li>Teknolojiler: Docker</li>
+      <li>Teknolojiler:Git, Docker, Postman</li>
     </ul>
   </section>
   <!-- <hr>
