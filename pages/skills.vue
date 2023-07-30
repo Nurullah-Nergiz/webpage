@@ -63,6 +63,16 @@ export default {
         </ul>
       </div>
     </div>
+    =======
+    <h1>Yeteneklerim</h1>
+    <ul>
+      <li>Geliştirme Dilleri: Html5,Css3,Javascript,C#,Php</li>
+      <li>Frameworkler: Nextjs,Nuxtjs,Threejs,Expressjs Electronjs,Asp.Net</li>
+      <li>Kütüphaneler: React,Vue, Tailwindcss</li>
+      <li>Veri Tabanları: MySql, Mongodb</li>
+      <li>Teknolojiler:Git, Docker, Postman</li>
+    </ul>
+    >>>>>>> 612657cb4316f5f96f7b75f1b94f6581dc9a4d5c
   </section>
   <!-- <hr>
     <ul>

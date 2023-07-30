@@ -2,10 +2,10 @@
 
 Bu proje, benim kişisel web sitemdir. Sitede hakkımda bilgileri, özgeçmişim ve portfolyom gibi kişisel bilgilerimi paylaşıyorum.
 
-##Nasıl çalışır?
+## Nasıl çalışır?
 Web sitem statik bir site olarak oluşturuldu ve HTML, CSS ve JavaScript kullanılarak geliştirildi. Sayfalarımı görüntülemek için bir web tarayıcısı kullanabilirsiniz.
 
-##Kurulum
+## Kurulum
 Bu bir statik web sitesidir, bu nedenle herhangi bir kurulum gerektirmez.
 
 ## Kurulum
