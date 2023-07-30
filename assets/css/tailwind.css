@@ -18,8 +18,17 @@
   }
 
   html,
-  body {
-    height: 100%;
+  body,
+  #__nuxt {
+    min-height: 99vh;
+  }
+
+  h1 {
+    @apply text-3xl;
+  }
+
+  main {
+    @apply h-full;
   }
 }
 

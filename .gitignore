@@ -1,4 +1,6 @@
 node_modules
+.vscode/**/*
+
 *.log*
 package-lock.json
 .nuxt
@@ -9,3 +11,4 @@ package-lock.json
 dist
 ui.jpeg
 
+pages/projects.vue

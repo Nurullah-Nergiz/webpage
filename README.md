@@ -29,7 +29,4 @@ yarn dev
 ##Lisans
 Bu proje MIT lisansı altında lisanslanmıştır.
 
-Bu web sitesi Nuxtjs ile Vuejs üzerine inşa edilmiştir. (powered by netlify).
-
-
-
+Bu web sitesi Nuxtjs ile Vuejs üzerine inşa edilmiştir.

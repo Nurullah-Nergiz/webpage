@@ -1,9 +1,9 @@
 <template>
-    <footer class="mt-5 py-2">
+    <footer class="mt-5 py-2 text-center">
         Bu web sitesinin kaynak kodlarına
         <a href="https://github.com/Nurullah-Nergiz/webpage" class="text-white border-b border-current">
-            <b>Github üzerinden</b>
+            <b>Github </b>
         </a>
-        ulaşabilirsiniz.
+        üzerinden ulaşabilirsiniz.
     </footer>
 </template>
