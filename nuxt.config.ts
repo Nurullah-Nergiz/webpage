@@ -51,7 +51,7 @@ export default defineNuxtConfig({
         },
         {
           name: "keywords",
-          content: `Nurullah Nergiz,nurullah, nergiz,nurullah nergiz, Frontend developer`,
+          content: `Nurullah Nergiz,nurullah, nergiz,nurullah nergiz, Frontend developer, github, linkedin, `,
         },
         {
           name: "og:title",
