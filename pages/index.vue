@@ -13,7 +13,8 @@ export default {
           // hid: "description",
           name: "description",
           content: `
-          Nurullah Nergiz, son teknolojileri takip eden bir web yazılımcısıdır. Web sitelerinizin kullanıcı deneyimini geliştirerek, markanızın bilinirliğini artırmak için sizinle çalışmak için sabırsızlanıyor. İletişim için nurullah-nergiz@hotmail.com adresine e-posta gönderebilirsiniz.`,
+          Yaratıcı front-end geliştirici olarak, interaktif ve estetik web deneyimleri tasarlayıp kodluyorum. Portföyümü keşfedin!
+          `,
         },
       ],
     });
