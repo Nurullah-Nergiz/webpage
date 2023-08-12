@@ -1,46 +1,40 @@
 <script>
 import { getRepoReadme, getRepoDetails } from '~/services/githubRepos';
 import markdownParse from 'markdown-html-transformer';
+import { useHead } from '@unhead/vue';
 
 export default {
     data() {
         return {
+            repo: {},
             readme: "",
         }
     },
     created() {
-        getRepoReadme(this.$route.params.slug[0], this.$route.params.slug[1]).then((data) => {
-            if (data.status !== 200) console.error("repos");
 
-            this.readme = markdownParse.convertMarkdownToHTML(data.data);
-        });
-        getRepoDetails(this.$route.params.slug[0]).then((data) => {
-            if (data.status !== 200) console.error("repos");
+        Promise.all([getRepoReadme(this.$route.params.slug[0], this.$route.params.slug[1]), getRepoDetails(this.$route.params.slug[0])])
+            .then((data) => {
+                this.readme = markdownParse.convertMarkdownToHTML(data[0].data);
+                this.repo = data[1].data;
 
-            this.repo = data.data;
-        });
-    },
-    setup() {
-        const repo = ref({})
-        const { params } = useRoute();
-        useHead({
-            title: `${params.slug[0]} - nurullahnergiz`,
-            meta: [
-                {
-                    hid: "author",
-                    name: "author",
-                    content: "Nurullah Nergiz",
-                },
-                {
-                    // hid: "description",
-                    name: "description",
-                    content: `
-                    ${params.slug[0]} - Modern ve etkileyici web tasarımıyla kullanıcı deneyimini zirveye taşıyan bir proje. Örneklerimizi keşfedin ve ilham alın!
-                    `,
-                },
-            ],
-        });
-        return { repo }
+                useHead({
+                    title: `${this.$route.params.slug[0]} - nurullahnergiz`,
+                    meta: [
+                        {
+                            hid: "author",
+                            name: "author",
+                            content: "Nurullah Nergiz",
+                        },
+                        {
+                            // hid: "description",
+                            name: "description",
+                            content: `
+                    ${this.repo.description ?? (this.$route.params.slug[0] + " - Modern ve etkileyici web tasarımıyla kullanıcı deneyimini zirveye taşıyan bir proje. Örneklerimizi keşfedin ve ilham alın!")}
+                            `,
+                        },
+                    ],
+                });
+            });
     },
 }
 </script>
@@ -53,11 +47,15 @@ export default {
             <h2>README.md</h2>
             <br>
             <div v-html="readme" class=""> </div>
+            <!-- <pre>{{ repo }}</pre> -->
         </div>
         <aside class="md:max-w-[270px] md:w-3/12 h-min bg-secondary p-5 flex flex-col gap-3">
             <a v-if="repo.homepage" :href="repo.homepage" target="_blank">Home Page <br>
-                <i class='bx bx-link'></i>{{ repo.homepage?.replace('https://', "") }}
+                <i class='bx bx-link text-white'></i>{{ repo.homepage?.replace('https://', "") }}
             </a>
+            <a :href="repo.html_url">
+                <i class='bx bxl-github text-white'></i>
+                Github </a>
             <ul>
                 <li>Topics </li>
                 <li v-for="item in repo.topics" class="my-2">
