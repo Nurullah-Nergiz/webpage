@@ -11,6 +11,17 @@ export default defineNuxtConfig({
   ],
   sitemap: {
     siteUrl: "https://nurullahnergiz.com/",
+    urls: async () => {
+      const { data } = await getRepos();
+      return data.map(
+        (page: { name; default_branch }) => ({
+          loc: `/projects/${page.name}/${page.default_branch}`,
+          lastmod: new Date(),
+          changefreq: "daily",
+          priority: 0.8,
+        })
+      );
+    },
     // urls: async () => {
     //   getRepos().then((data) => {
     //     return data.data.map((page) => ({
@@ -30,8 +41,8 @@ export default defineNuxtConfig({
   },
   robots: {
     indexable: true,
-    UserAgent: '*',
-    Disallow: '/'
+    UserAgent: "*",
+    Disallow: "/",
     // sitemap: ["/sitemap.xml"],
   },
   app: {

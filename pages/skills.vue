@@ -32,6 +32,7 @@ export default {
           <li>Expressjs</li>
           <li>Electronjs</li>
           <li>Asp.Net</li>
+          <li>Windows Forms</li>
         </ul>
       </div>
       <div>
@@ -43,7 +44,6 @@ export default {
           <li>Vuetur</li>
           <li>Threejs</li>
           <li>Tailwindcss</li>
-          <li>Windows Forms</li>
         </ul>
       </div>
       <div class="">
@@ -58,7 +58,7 @@ export default {
         <ul class="px-5 py-1 list-disc marker:text-primary">
           <li>Git</li>
           <li>Docker</li>
-          <li>CLI</li>
+          <li>Bash</li>
           <li>Linux</li>
         </ul>
       </div>
