@@ -11,6 +11,16 @@ export default {
         }
     },
     created() {
+        // asyncData({ params, error }) {
+        //     return axios
+        //         .get(`https://my-api/posts/${params.id}`)
+        //         .then((res) => {
+        //             return { title: res.data.title }
+        //         })
+        //         .catch((e) => {
+        //             error({ statusCode: 404, message: 'Post not found' })
+        //         })
+        // }
 
         Promise.all([getRepoReadme(this.$route.params.slug[0], this.$route.params.slug[1]), getRepoDetails(this.$route.params.slug[0])])
             .then((data) => {

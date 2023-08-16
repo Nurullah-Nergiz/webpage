@@ -7,14 +7,16 @@ export default defineNuxtConfig({
   modules: [
     "@nuxtjs/tailwindcss",
     "nuxt-simple-sitemap",
-    "nuxt-simple-robots",
   ],
   sitemap: {
     siteUrl: "https://nurullahnergiz.com/",
     urls: async () => {
       const { data } = await getRepos();
       return data.map(
-        (page: { name; default_branch }) => ({
+        (page: {
+          name: string;
+          default_branch: string;
+        }) => ({
           loc: `/projects/${page.name}/${page.default_branch}`,
           lastmod: new Date(),
           changefreq: "daily",
@@ -22,28 +24,6 @@ export default defineNuxtConfig({
         })
       );
     },
-    // urls: async () => {
-    //   getRepos().then((data) => {
-    //     return data.data.map((page) => ({
-    //       loc: `/blog/${page.name}`,
-    //       lastmod: page.updatedAt,
-    //       changefreq: "daily",
-    //       priority: 0.8,
-    //     }));
-    //   });
-    // },
-  },
-  nitro: {
-    prerender: {
-      crawlLinks: true,
-      routes: ["/"],
-    },
-  },
-  robots: {
-    indexable: true,
-    UserAgent: "*",
-    Disallow: "/",
-    // sitemap: ["/sitemap.xml"],
   },
   app: {
     head: {
