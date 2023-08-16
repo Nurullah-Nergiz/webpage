@@ -42,7 +42,6 @@ export default defineNuxtConfig({
   robots: {
     indexable: true,
     UserAgent: "*",
-    Allow: "/",
     // sitemap: ["/sitemap.xml"],
   },
   app: {
