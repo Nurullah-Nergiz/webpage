@@ -24,31 +24,6 @@ export default defineNuxtConfig({
         })
       );
     },
-<<<<<<< HEAD
-=======
-    // urls: async () => {
-    //   getRepos().then((data) => {
-    //     return data.data.map((page) => ({
-    //       loc: `/blog/${page.name}`,
-    //       lastmod: page.updatedAt,
-    //       changefreq: "daily",
-    //       priority: 0.8,
-    //     }));
-    //   });
-    // },
-  },
-  nitro: {
-    prerender: {
-      crawlLinks: true,
-      routes: ["/"],
-    },
-  },
-  robots: {
-    indexable: true,
-    UserAgent: "*",
-    Allow: "*"
-    // sitemap: ["/sitemap.xml"],
->>>>>>> 296045067ff06f9ce8bfb654d9a723ef1e831d4b
   },
   app: {
     head: {
