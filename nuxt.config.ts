@@ -30,6 +30,12 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: "tr",
       },
+      link:[
+        {
+          rel:"canonical",
+          href:"https://nurullahnergiz.com/"
+        }
+      ],
       meta: [
         {
           hid: "author",
