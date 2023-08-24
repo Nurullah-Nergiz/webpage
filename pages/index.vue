@@ -23,7 +23,7 @@ export default {
 </script>
 
 <template>
-  <section class="md:flex items-stretch flex-wrap gap-5 h-full">
+  <section class="flex-1 md:flex items-center flex-wrap gap-5">
     <div class="flex-1 max-w-full">
       <h1 class="text-3xl">Hello Nurullah</h1><br>
       <p>
