@@ -19,7 +19,7 @@ export default {
             meta: [
                 {
                     name: "description",
-                    content: `Benim adım Nurullah Nergiz ve front-end developer olarak tasarladığım çeşitli projeleri burada keşfedin. Modern, etkileşimli ve kullanıcı dostu web siteleri için çalışmalarımı göz atın.`
+                    content: `Benim adım Nurullah Nergiz ve front-end developer olarak tasarladığım çeşitli projeleri burada keşfedin.`
                 }
             ]
         });
