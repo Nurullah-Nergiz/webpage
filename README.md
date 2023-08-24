@@ -1,32 +1,36 @@
-[Ziyaret et](https://nurullahnergiz.com/)
+# Welcome to webpage
 
-Bu proje, benim kişisel web sitemdir. Sitede hakkımda bilgileri, özgeçmişim ve portfolyom gibi kişisel bilgilerimi paylaşıyorum.
+> Frontend portfolio application is the platform where I showcase my work and demonstrate my technical skills, and create user-friendly and interactive web interfaces.
 
-## Nasıl çalışır?
-Web sitem statik bir site olarak oluşturuldu ve HTML, CSS ve JavaScript kullanılarak geliştirildi. Sayfalarımı görüntülemek için bir web tarayıcısı kullanabilirsiniz.
+### 🏠 [Homepage](https://nurullahnergiz.com/)
 
-## Kurulum
-Bu bir statik web sitesidir, bu nedenle herhangi bir kurulum gerektirmez.
+### ✨ [Demo](https://nurullahnergiz.com/)
 
-## Kurulum
+## Install
 
-İndirmek için
-
-```bash
-git clone https://github.com/Nurullah-Nergiz/cv.git
+```sh
+git clone https://github.com/Nurullah-Nergiz/webpage.git
 ```
 
-Bağımlılıkları yüklediğinizden emin olun:
-
-```bash
-yarn install
+```sh
+npm install
 ```
 
-```bash
-yarn dev
+## Usage
+
+```sh
+npm run dev
 ```
 
-##Lisans
-Bu proje MIT lisansı altında lisanslanmıştır.
+## Author
 
-Bu web sitesi Nuxtjs ile Vuejs üzerine inşa edilmiştir.
+👤 **Nurullah Nergiz**
+
+- Website: https://nurullahnergiz.com/
+- Github: [@Nurullah-Nergiz](https://github.com/Nurullah-Nergiz)
+- LinkedIn: [@in\/nurullah-nergiz](https://linkedin.com/in/in/nurullah-nergiz)
+
+## 📝 License
+
+Copyright © 2023 [Nurullah Nergiz](https://github.com/Nurullah-Nergiz).<br />
+This project is [MIT](https://github.com/Nurullah-Nergiz/webpage/blob/master/LICENSE) licensed.

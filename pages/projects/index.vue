@@ -28,10 +28,6 @@ export default {
 </script>
 <template>
     <section>
-        <!-- <pre> -->
-        <!-- {{ Object.keys(repos[0]) }} -->
-        <!-- {{ repos[0] }} -->
-        <!-- </pre> -->
         <h1>Halka Açık Github Depolarım</h1>
         <hr> <br>
         <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-3">

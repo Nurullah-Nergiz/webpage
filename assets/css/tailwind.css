@@ -23,6 +23,10 @@
     min-height: 99vh;
   }
 
+  a {
+    color: #fff;
+  }
+
   h1 {
     @apply text-3xl;
   }
@@ -40,5 +44,19 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+  }
+
+  .readme-description h1,
+  .readme-description h2,
+  .readme-description h3,
+  .readme-description h4,
+  .readme-description h5,
+  .readme-description h6,
+  .readme-description a {
+    @apply my-3 border-b border-white;
+  }
+
+  .readme-description pre code.language-bash {
+    @apply my-3 p-3 bg-secondary text-white block;
   }
 }

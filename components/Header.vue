@@ -21,7 +21,7 @@
           </g>
         </g>
       </svg>
-      <span class="text-2xl">NurullahNergiz</span>
+      <span class="text-2xl text-primary">NurullahNergiz</span>
     </NuxtLink>
   </header>
 </template>
