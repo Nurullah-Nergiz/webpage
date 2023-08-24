@@ -2,7 +2,7 @@
 
 > Frontend portfolio application is the platform where I showcase my work and demonstrate my technical skills, and create user-friendly and interactive web interfaces.
 
-### 🏠 [Homepage](https://nurullahnergiz.com/)
+### ✨ [Homepage](https://nurullahnergiz.com/)
 
 ### ✨ [Demo](https://nurullahnergiz.com/)
 
@@ -24,7 +24,7 @@ npm run dev
 
 ## Author
 
-👤 **Nurullah Nergiz**
+**Nurullah Nergiz**
 
 - Website: https://nurullahnergiz.com/
 - Github: [@Nurullah-Nergiz](https://github.com/Nurullah-Nergiz)
