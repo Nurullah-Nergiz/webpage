@@ -30,11 +30,15 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: "tr",
       },
-      link:[
+      link: [
         {
-          rel:"canonical",
-          href:"https://nurullahnergiz.com/"
-        }
+          rel: "icon",
+          href: "https://nurullahnergiz.com/favicon.ico",
+        },
+        {
+          rel: "canonical",
+          href: "https://nurullahnergiz.com/",
+        },
       ],
       meta: [
         {

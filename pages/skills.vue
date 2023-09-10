@@ -3,6 +3,12 @@ export default {
   setup() {
     useHead({
       title: "Nurullah Nergiz Yeteneklerim - Nurullah Nergiz",
+      link: [
+        {
+          rel: "canonical",
+          href: `https://nurullahnergiz.com/skills`
+        }
+      ],
     });
   },
   created() {

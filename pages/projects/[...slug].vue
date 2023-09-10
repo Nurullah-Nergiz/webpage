@@ -1,7 +1,5 @@
 <script setup >
-import { getRepoReadme, getRepoDetails } from '~/services/githubRepos';
 import markdownParse from 'markdown-html-transformer';
-import { useHead } from '@unhead/vue';
 
 const [repo, readme] = [ref({}), ref('')]
 const { params } = useRoute();
@@ -21,6 +19,12 @@ Promise.all([
                         ${res[1].data._rawValue.description ?? (params.slug[0] + " - Modern ve etkileyici web tasarımıyla kullanıcı deneyimini zirveye taşıyan bir proje. Örneklerimizi keşfedin ve ilham alın!")}
                         `,
             },
+        ],
+        link: [
+            {
+                rel: "canonical",
+                href: `https://nurullahnergiz.com/projects/${params.slug[0]}/${params.slug[1]}`
+            }
         ],
     });
 });
@@ -55,6 +59,8 @@ Promise.all([
             <hr>
             <h3>About</h3>
             <p>{{ repo?.description }}</p>
+            https://raw.githubusercontent.com/Nurullah-Nergiz/cli-readme-generator/master/Readme.md
+            https://raw.githubusercontent.com/Nurullah-Nergiz/cli-readme-generator/master/README.md
         </aside>
     </section>
 </template>

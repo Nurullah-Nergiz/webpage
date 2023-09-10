@@ -21,7 +21,13 @@ export default {
                     name: "description",
                     content: `Benim adım Nurullah Nergiz ve front-end developer olarak tasarladığım çeşitli projeleri burada keşfedin.`
                 }
-            ]
+            ],
+            link: [
+                {
+                    rel: "canonical",
+                    href: `https://nurullahnergiz.com/projects`
+                }
+            ],
         });
     },
 };
