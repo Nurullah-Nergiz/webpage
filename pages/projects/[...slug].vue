@@ -10,6 +10,9 @@ Promise.all([
 ]).then((res) => {
     [readme.value, repo.value] = [markdownParse.convertMarkdownToHTML(res[0].data._rawValue), res[1].data._rawValue]
 
+
+    console.log(res[1].data._rawValue.topics.join(", "));
+
     useHead({
         title: `${res[1].data._rawValue.full_name}`,
         meta: [
@@ -19,6 +22,10 @@ Promise.all([
                         ${res[1].data._rawValue.description ?? (params.slug[0] + " - Modern ve etkileyici web tasarımıyla kullanıcı deneyimini zirveye taşıyan bir proje. Örneklerimizi keşfedin ve ilham alın!")}
                         `,
             },
+            {
+                name: "keywords",
+                content: ["nurullah nergiz", ...res[1].data._rawValue.topics].join(", ")
+            }
         ],
         link: [
             {
@@ -59,8 +66,8 @@ Promise.all([
             <hr>
             <h3>About</h3>
             <p>{{ repo?.description }}</p>
-            https://raw.githubusercontent.com/Nurullah-Nergiz/cli-readme-generator/master/Readme.md
-            https://raw.githubusercontent.com/Nurullah-Nergiz/cli-readme-generator/master/README.md
+            <!-- https://raw.githubusercontent.com/Nurullah-Nergiz/cli-readme-generator/master/Readme.md
+            https://raw.githubusercontent.com/Nurullah-Nergiz/cli-readme-generator/master/README.md -->
         </aside>
     </section>
 </template>
