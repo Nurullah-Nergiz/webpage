@@ -24,7 +24,7 @@ export default {
 
 <template>
   <section class="flex-1 md:flex flex-wrap gap-5">
-    <div class="flex-1 max-w-full">
+    <div class="flex-1 max-w-full mb-6">
       <h1 class="mb-3 text-3xl">Merhaba Ben Nurullah</h1>
       <p>
         Merhaba, Ben Nurullah, Türkiye'den bir ön uç geliştiriciyim. <br>

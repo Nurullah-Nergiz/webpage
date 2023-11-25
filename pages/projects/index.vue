@@ -9,8 +9,8 @@ export default {
     created() {
         getRepos().then((data) => {
             if (data.status !== 200) console.error("repos");
-
-            this.repos = data.data;
+            console.log(data.data[0]);
+            this.repos = data.data.filter((i => i.name !== 'Nurullah-Nergiz'));
         });
     },
     setup() {
@@ -37,15 +37,42 @@ export default {
         <h1>Halka Açık Github Depolarım</h1>
         <hr> <br>
         <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-3">
-            <NuxtLink :to="`./projects/${repo.name}/${repo.default_branch}`" v-for="repo in repos" :key="repo.id"
+            <NuxtLink :to="`./projects/${repo.name}/${repo.default_branch}`" v-for=" repo  in  repos " :key="repo.id"
                 class="px-3 py-2 bg-secondary rounded-xl ">
-                <ul>
-                    <li class="flex gap-1">
-                        <i class="bx bx-chevron-right text-primary text-2xl"></i>
-                        <b class="flex-1 text-xl ">
-                            {{ repo.full_name }}
-                        </b>
-                        <img :src="repo.owner.avatar_url" alt="Github avatar" class="max-h-16 ml-5 ">
+                <ul class="flex gap-2">
+                    <li class="w">
+                        <img :src="repo.owner.avatar_url" alt="Github avatar"
+                            class="w-12 border border-primary border-b-transparent border-r-transparent rounded-full shadow-lg">
+                    </li>
+                    <li class="w">
+                        <span class="text">{{ repo.owner.login }}</span>
+                        <p class="text-xs">
+                            <i class='bx bx-git-branch'></i>
+                            {{ repo.default_branch }}
+                        </p>
+                    </li>
+                </ul>
+                <!-- <hr class="my-2">  -->
+                <ul class="mt-2 block">
+                    <li class="flex">
+                        <h3 class="flex items-center">
+                            <i class="bx bx-chevron-right text-primary "></i>
+                            <b class="h-6 text-ellipsis overflow-hidden">
+                                {{ repo.name }}
+                            </b>
+                        </h3>
+                    </li>
+                    <li>
+                        <p class="max-h-12 mb-2 p-1 text-xs overflow-hidden text-ellipsis">
+                            {{ repo.description }}
+                        </p>
+                    </li>
+                    <li>
+                        <ul class="flex flex-wrap gap-x-3">
+                            <li v-for=" topic  in  repo.topics " class="text-xs whitespace-nowrap">
+                                #{{ topic }}
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </NuxtLink>
