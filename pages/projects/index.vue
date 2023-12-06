@@ -1,36 +1,24 @@
-<script>
-import { getRepos } from "~~/services/githubRepos.js";
-export default {
-    data() {
-        return {
-            repos: null,
-        };
-    },
-    created() {
-        getRepos().then((data) => {
-            if (data.status !== 200) console.error("repos");
-            console.log(data.data[0]);
-            this.repos = data.data.filter((i => i.name !== 'Nurullah-Nergiz'));
-        });
-    },
-    setup() {
-        useHead({
-            title: "Nurullah Nergiz Projeler Sayfası - nurullahnergiz",
-            meta: [
-                {
-                    name: "description",
-                    content: `Benim adım Nurullah Nergiz ve front-end developer olarak tasarladığım çeşitli projeleri burada keşfedin.`
-                }
-            ],
-            link: [
-                {
-                    rel: "canonical",
-                    href: `https://nurullahnergiz.com/projects`
-                }
-            ],
-        });
-    },
-};
+<script setup>
+const repos = ref([]);
+
+useFetch(`https://api.github.com/users/Nurullah-Nergiz/repos`).then((data) => {
+    repos.value = data?.data._rawValue.filter((i => i.name !== 'Nurullah-Nergiz'));
+})
+useHead({
+    title: "Nurullah Nergiz Projeler Sayfası - nurullahnergiz",
+    meta: [
+        {
+            name: "description",
+            content: `Benim adım Nurullah Nergiz ve front-end developer olarak tasarladığım çeşitli projeleri burada keşfedin.`
+        }
+    ],
+    link: [
+        {
+            rel: "canonical",
+            href: `https://nurullahnergiz.com/projects`
+        }
+    ],
+});
 </script>
 <template>
     <section>
