@@ -12,17 +12,21 @@ export default defineNuxtConfig({
     siteUrl: "https://nurullahnergiz.com/",
     urls: async () => {
       const { data } = await getRepos();
-      return data.map(
-        (page: {
-          name: string;
-          default_branch: string;
-        }) => ({
-          loc: `/projects/${page.name}/${page.default_branch}`,
-          lastmod: new Date(),
-          changefreq: "daily",
-          priority: 0.8,
-        })
-      );
+      return data
+        .filter(
+          ({ name }) => name !== "Nurullah-Nergiz"
+        )
+        .map(
+          (page: {
+            name: string;
+            default_branch: string;
+          }) => ({
+            loc: `/projects/${page.name}/${page.default_branch}`,
+            lastmod: new Date(),
+            changefreq: "daily",
+            priority: 0.8,
+          })
+        );
     },
   },
   app: {
@@ -52,11 +56,15 @@ export default defineNuxtConfig({
         },
         {
           name: "keywords",
-          content: `Nurullah Nergiz,nurullah, nergiz,nurullah nergiz, Frontend developer, github, linkedin, `,
+          content: `Nurullah Nergiz, nurullah, nergiz, nurullah nergiz, Frontend developer, github, linkedin, `,
         },
         {
           name: "og:title",
           content: "Nurullah nergiz",
+        },
+        {
+          name: "theme-color",
+          content: "rgb(17, 17, 17)",
         },
       ],
     },
