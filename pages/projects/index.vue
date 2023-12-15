@@ -22,11 +22,10 @@ useHead({
 </script>
 <template>
     <section>
-        <h1>Halka Açık Github Depolarım</h1>
-        <hr> <br>
-        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-3">
+        <h1 class="p-3 my-2 bg-secondary shadow-sm shadow-black rounded-md">Halka Açık Github Depolarım</h1>
+        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-4">
             <NuxtLink :to="`./projects/${repo.name}/${repo.default_branch}`" v-for=" repo  in  repos " :key="repo.id"
-                class="px-3 py-2 bg-secondary rounded-xl ">
+                class="p-3 bg-secondary shadow-sm shadow-black rounded-md">
                 <ul class="flex gap-2">
                     <li class="w">
                         <img :src="repo.owner.avatar_url" alt="Github avatar"

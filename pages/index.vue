@@ -22,10 +22,10 @@ export default {
 </script>
 
 <template>
-  <section class="flex-1 md:flex flex-wrap gap-5 mb-3">
-    <div class="flex-1 max-w-full ">
-      <h1 class="mb-3 text-3xl">Merhaba Ben Nurullah</h1>
-      <p class="flex-1">
+  <section class="md:flex flex-wrap gap-4 mb-3">
+    <div class="flex-1 max-w-full p-3 bg-secondary shadow-sm shadow-black rounded-md ">
+      <h1 class="mb-2 text-3xl">Merhaba Ben Nurullah</h1>
+      <p class="">
         Türkiye'den bir front-end geliştirici olarak, 2019 yılından bu yana web teknolojileriyle yoğun bir şekilde
         ilgileniyorum. HTML, CSS, JavaScript, React, Bootstrap gibi önemli araçları ustaca kullanarak, modern ve kullanıcı
         dostu web siteleri tasarlamak ve kodlamak konusundaki becerilerimi geliştirdim. Ayrıca, GitHub üzerinde kendi
@@ -36,25 +36,22 @@ export default {
         gelişmelerle adım adım uyum sağlamaya çalışıyorum.
 
         Profesyonel bir kariyere odaklanıyor ve web geliştirme alanında kendimi kanıtlamak için adım atmaya kararlıyım.
-        Her proje, sadece kodlama becerilerimi sergilemekle kalmayıp, aynı zamanda kullanıcı deneyimini en üst düzeye
-        çıkarmak adına estetik ve işlevselliği bir araya getiren bir özenle hazırlanmıştır. Geleceğe odaklı bu yolculukta,
-        benimle birlikte teknolojinin sınırlarını zorlamaya ve daha iyi bir dijital dünya inşa etmeye davetlisiniz.
       </p>
-      <div class="">
+      <div class="my-2">
         <a href="./cv.html" download
-          class="mt-5 py-2 px-3 text-gray-500 border border-current rounded-br-xl rounded-tl-xl shadow-inner shadow-current inline-block">
+          class="py-2 px-3 text-gray-500 border border-current rounded-br-xl rounded-tl-xl shadow-inner shadow-current inline-block">
           <i class='bx bx-download'></i>
           CV'yi indir
         </a>
         <a href="./cv.html"
-          class="mt-5 ml-5 py-2 px-3 text-black bg-white border border-current rounded-br-xl rounded-tl-xl shadow-inner shadow-current inline-block">
+          class="ml-5 py-2 px-3 text-black bg-white border border-current rounded-br-xl rounded-tl-xl shadow-inner shadow-current inline-block">
           <i class='bx bx-link-external'></i>
           CV'yi ziyaret et
         </a>
       </div>
     </div>
-    <div class=" md:max-w-xs md:px-5 flex flex-col gap-3">
-      <h2 class="mr-5 mb-3 text-2xl">Sosyal Medya</h2>
+    <div class=" md:max-w-xs w-full p-3 bg-secondary md:px-5 flex flex-col gap-4 shadow-sm shadow-black rounded-md">
+      <h2 class="mr-5 text-2xl">Sosyal Medya</h2>
       <a href="https://www.instagram.com/nurullahnergiz_/" target="_blank"
         class="px-3 py-2 flex items-center gap-2 border border-current rounded-xl ">
         <i class='bx bxl-instagram'></i>

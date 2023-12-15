@@ -17,10 +17,9 @@ export default {
 </script>
 <template>
   <section class="skills">
-    <h1 class="text-3xl">Yeteneklerim</h1>
-    <hr><br>
-    <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-      <div>
+    <h1 class="p-3 my-2 bg-secondary shadow-sm shadow-black rounded-md">Yeteneklerim</h1>
+    <div class="mt-4 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+      <div class="p-3 my-2 bg-secondary shadow-sm shadow-black rounded-md">
         <h2>Geliştirme Dilleri</h2>
         <ul class="px-5 py-2 list-disc marker:text-primary">
           <li>Html5</li>
@@ -30,7 +29,7 @@ export default {
           <li>Php</li>
         </ul>
       </div>
-      <div>
+      <div class="p-3 my-2 bg-secondary shadow-sm shadow-black rounded-md">
         <h3>Frameworkler</h3>
         <ul class="px-5 py-2 list-disc marker:text-primary">
           <li>Nextjs</li>
@@ -41,7 +40,7 @@ export default {
           <li>Windows Forms</li>
         </ul>
       </div>
-      <div>
+      <div class="p-3 my-2 bg-secondary shadow-sm shadow-black rounded-md">
         <h4>Kütüphaneler</h4>
         <ul class="px-5 py-2 list-disc marker:text-primary">
           <li>React </li>
@@ -52,14 +51,14 @@ export default {
           <li>Tailwindcss</li>
         </ul>
       </div>
-      <div class="">
+      <div class="p-3 my-2 bg-secondary shadow-sm shadow-black rounded-md">
         <h5>Veri Tabanları</h5>
         <ul class="px-5 py-2 list-disc marker:text-primary">
           <li> MySql</li>
           <li> Mongodb</li>
         </ul>
       </div>
-      <div class="">
+      <div class="p-3 my-2 bg-secondary shadow-sm shadow-black rounded-md">
         <h6>Teknolojiler</h6>
         <ul class="px-5 py-1 list-disc marker:text-primary">
           <li>Git</li>

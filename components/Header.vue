@@ -1,7 +1,6 @@
 <template>
   <header class="text-primary">
-    <NuxtLink to="/" active-class="active"
-      class="px-2 py-1  text-center leading-6 bg-secondary rounded-full flex gap-2 items-center">
+    <NuxtLink to="/" active-class="active" class="px-2 py-1  text-center leading-6 rounded-full flex gap-2 items-center">
       <svg class="w-12 h-11">
         <defs id=" SvgjsDefs1001">
           <linearGradient id="SvgjsLinearGradient1011">

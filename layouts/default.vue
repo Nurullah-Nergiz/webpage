@@ -2,11 +2,12 @@
 
 </script>
 <template>
-  <section class="my-5 flex flex-wrap justify-between items-center gap-3">
+  <section
+    class="p-3 my-2 bg-secondary flex flex-wrap justify-between items-center gap-3 shadow-sm shadow-black rounded-md">
     <Header />
     <Nav />
   </section>
-  <main class="mt-3 flex-1 flex flex-col">
+  <main class=" flex-1 flex flex-col rounded-md">
     <slot />
   </main>
   <Footer />
