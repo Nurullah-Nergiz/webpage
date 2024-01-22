@@ -59,4 +59,8 @@
   .readme-description pre code.language-bash {
     @apply my-3 p-3 bg-secondary text-white block;
   }
+
+  .readme-description li {
+    @apply m-2;
+  }
 }

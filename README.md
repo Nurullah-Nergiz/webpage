@@ -1,36 +1,51 @@
-# Welcome to webpage
+# webpage
 
-> Frontend portfolio application is the platform where I showcase my work and demonstrate my technical skills, and create user-friendly and interactive web interfaces.
+Frontend portfolio application is the platform where I showcase my work and demonstrate my technical skills, and create user-friendly and interactive web interfaces.
 
-### ✨ [Homepage](https://nurullahnergiz.com/)
+---
 
-### ✨ [Demo](https://nurullahnergiz.com/)
+## Download
 
-## Install
-
-```sh
-git clone https://github.com/Nurullah-Nergiz/webpage.git
+```bash
+git clone git+https://github.com/Nurullah-Nergiz/webpage.git
 ```
 
-```sh
-npm install
-```
+Recommended NodeJS Version [v21.2.0](https://nodejs.org/dist/v21.2.0)
 
-## Usage
+## Dependencies
 
-```sh
-npm run dev
-```
+	axios: ^1.3.3
+	markdown-html-transformer: ^1.0.3
+	
+## DevDependencies
+
+	@nuxtjs/tailwindcss: ^6.8.0
+	nuxt: 3.5.0
+	nuxt-simple-robots: ^2.3.0
+	nuxt-simple-sitemap: ^2.7.0
+	
+
+---
 
 ## Author
 
-**Nurullah Nergiz**
+ - Nurullah Nergiz
 
-- Website: https://nurullahnergiz.com/
-- Github: [@Nurullah-Nergiz](https://github.com/Nurullah-Nergiz)
-- LinkedIn: [@in\/nurullah-nergiz](https://linkedin.com/in/in/nurullah-nergiz)
+- ![Website](https://img.shields.io/website?url=https://nurullahnergiz.com/&up_message=visit&up_color=%23fff&link=https://nurullahnergiz.com/)
 
-## 📝 License
+- [![GitHub](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white)](https://www.github.com/Nurullah-Nergiz)
 
-Copyright © 2023 [Nurullah Nergiz](https://github.com/Nurullah-Nergiz).<br />
-This project is [MIT](https://github.com/Nurullah-Nergiz/webpage/blob/master/LICENSE) licensed.
+- [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?logo=Twitter&logoColor=white)](https://twitter.com/nurullahNergiz_)
+
+- [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/nurullah-nergiz)
+
+- [![Medium](https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white)](https://medium.com/@nurullahnergiz)
+
+
+---
+
+## License
+
+![GitHub License](https://img.shields.io/github/license/Nurullah-Nergiz/webpage?style=social&logo=github&label=License)
+
+This project was generated with [Docify-Cli](https://www.npmjs.com/package/docify-cli).

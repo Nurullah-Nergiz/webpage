@@ -12,8 +12,7 @@ export default {
         {
           // hid: "description",
           name: "description",
-          content: `Ben, yaratıcı bir front-end geliştirici olarak, web dünyasına özgü ve unutulmaz deneyimler sunmak üzere tasarım ve kodlama konusundaki tutkumu bir araya getiriyorum.
-           Her proje, estetik bir bakış açısıyla şekillenirken, aynı zamanda interaktif özelliklerle zenginleştirilerek kullanıcılar arasında kalıcı bir etki bırakmayı hedefliyorum.`,
+          content: `Ben, yaratıcı bir front-end geliştirici olarak, web dünyasına özgü ve unutulmaz deneyimler sunmak üzere tasarım ve kodlama konusundaki tutkumu bir araya getiriyorum.`,
         },
       ],
     });
@@ -22,8 +21,8 @@ export default {
 </script>
 
 <template>
-  <section class="md:flex flex-wrap gap-4 mb-3">
-    <div class="flex-1 max-w-full p-3 bg-secondary shadow-sm shadow-black rounded-md ">
+  <section class="md:flex flex-wrap gap-6 mb-3">
+    <div class="flex-1 max-w-full p-3 shadow-sm shadow-secondary rounded-md ">
       <h1 class="mb-2 text-3xl">Merhaba Ben Nurullah</h1>
       <p class="">
         Türkiye'den bir front-end geliştirici olarak, 2019 yılından bu yana web teknolojileriyle yoğun bir şekilde
@@ -50,7 +49,7 @@ export default {
         </a>
       </div>
     </div>
-    <div class=" md:max-w-xs w-full p-3 bg-secondary md:px-5 flex flex-col gap-4 shadow-sm shadow-black rounded-md">
+    <div class=" md:max-w-xs w-full p-3 md:px-5 flex flex-col gap-4 shadow-sm shadow-secondary rounded-md">
       <h2 class="mr-5 text-2xl">Sosyal Medya</h2>
       <a href="https://www.instagram.com/nurullahnergiz_/" target="_blank"
         class="px-3 py-2 flex items-center gap-2 border border-current rounded-xl ">

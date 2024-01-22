@@ -1,7 +1,7 @@
 <script setup>
 const repos = ref([]);
 
-useFetch(`https://api.github.com/users/Nurullah-Nergiz/repos`).then((data) => {
+useFetch(`https://api.github.com/users/Nurullah-Nergiz/repos?sort=updated`).then((data) => {
     repos.value = data?.data._rawValue.filter((i => i.name !== 'Nurullah-Nergiz'));
 })
 useHead({
@@ -22,14 +22,14 @@ useHead({
 </script>
 <template>
     <section>
-        <h1 class="p-3 my-2 bg-secondary shadow-sm shadow-black rounded-md">Halka Açık Github Depolarım</h1>
+        <h1 class="p-3 shadow-sm shadow-secondary rounded-md">Halka Açık Github Depolarım</h1>
         <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-4">
             <NuxtLink :to="`./projects/${repo.name}/${repo.default_branch}`" v-for=" repo  in  repos " :key="repo.id"
-                class="p-3 bg-secondary shadow-sm shadow-black rounded-md">
+                class="p-3 shadow-sm shadow-secondary rounded-md">
                 <ul class="flex gap-2">
                     <li class="w">
                         <img :src="repo.owner.avatar_url" alt="Github avatar"
-                            class="w-12 border border-primary border-b-transparent border-r-transparent rounded-full shadow-lg">
+                            class="w-12 p-px border border-primary border-b-transparent border-r-transparent rounded-full shadow-lg">
                     </li>
                     <li class="w">
                         <span class="text">{{ repo.owner.login }}</span>
@@ -39,7 +39,6 @@ useHead({
                         </p>
                     </li>
                 </ul>
-                <!-- <hr class="my-2">  -->
                 <ul class="mt-2 block">
                     <li class="flex">
                         <h3 class="flex items-center">

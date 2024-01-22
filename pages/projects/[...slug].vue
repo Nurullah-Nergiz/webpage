@@ -1,5 +1,5 @@
 <script setup >
-import markdownParse from 'markdown-html-transformer';
+import { convertMarkdownToHTML } from 'markdown-html-transformer';
 
 const [repo, readme] = [ref({}), ref('')]
 const { params } = useRoute();
@@ -8,23 +8,34 @@ Promise.all([
     useFetch(`https://raw.githubusercontent.com/Nurullah-Nergiz/${params.slug[0]}/${params.slug[1]}/README.md`),
     useFetch(`https://api.github.com/repos/Nurullah-Nergiz/${params.slug[0]}`)
 ]).then((res) => {
-    [readme.value, repo.value] = [markdownParse.convertMarkdownToHTML(res[0].data._rawValue), res[1].data._rawValue]
+    // const parser = new DOMParser();
+    // let readmeHtml = parser.parseFromString(markdownParse.convertMarkdownToHTML(res[0].data._rawValue), 'text/html').body;
+    // readmeHtml.querySelectorAll("img").forEach((img) => {
+    //     img.addEventListener('error', () => {
+    //         this.onerror = null;
+    //         this.src = 'https://placeimg.com/200/300/animals';
+    //     })
+
+    // })
+    [readme.value, repo.value] = [convertMarkdownToHTML(res[0].data._rawValue), res[1].data._rawValue]
 
 
-    console.log(res[1].data._rawValue.topics.join(", "));
+    console.log(readme);
+
+    // console.log(res[1].data._rawValue.topics.join(", "));
 
     useHead({
-        title: `${res[1].data._rawValue.full_name}`,
+        title: `${res[1].data._rawValue?.full_name}`,
         meta: [
             {
                 name: "description",
                 content: `
-                        ${res[1].data._rawValue.description ?? (params.slug[0] + " - Modern ve etkileyici web tasarımıyla kullanıcı deneyimini zirveye taşıyan bir proje. Örneklerimizi keşfedin ve ilham alın!")}
+                        ${res[1].data._rawValue?.description ?? (params.slug[0] + " - Modern ve etkileyici web tasarımıyla kullanıcı deneyimini zirveye taşıyan bir proje. Örneklerimizi keşfedin ve ilham alın!")}
                         `,
             },
             {
                 name: "keywords",
-                content: ["nurullah nergiz", ...res[1].data._rawValue.topics].join(", ")
+                content: ["nurullah nergiz", ...res[1].data._rawValue?.topics].join(", ")
             }
         ],
         link: [
@@ -66,8 +77,6 @@ Promise.all([
             <hr>
             <h3>About</h3>
             <p>{{ repo?.description }}</p>
-            <!-- https://raw.githubusercontent.com/Nurullah-Nergiz/cli-readme-generator/master/Readme.md
-            https://raw.githubusercontent.com/Nurullah-Nergiz/cli-readme-generator/master/README.md -->
         </aside>
     </section>
 </template>
