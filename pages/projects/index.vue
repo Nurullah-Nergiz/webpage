@@ -24,7 +24,7 @@ useHead({
     <section>
         <h1 class="p-3 shadow-sm shadow-secondary rounded-md">Halka Açık Github Depolarım</h1>
         <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-4">
-            <NuxtLink :to="`./projects/${repo.name}/${repo.default_branch}`" v-for=" repo  in  repos " :key="repo.id"
+            <NuxtLink :to="`/projects/${repo.name}/${repo.default_branch}`" v-for=" repo  in  repos " :key="repo.id"
                 class="p-3 shadow-sm shadow-secondary rounded-md">
                 <ul class="flex gap-2">
                     <li class="w">

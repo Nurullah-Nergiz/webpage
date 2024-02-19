@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const getRepos = () =>
   axios({
-    url: "https://api.github.com/users/Nurullah-Nergiz/repos",
+    url: "https://api.github.com/users/Nurullah-Nergiz/repos?",
   });
 
 export const getRepoReadme = (repoName, branch) =>

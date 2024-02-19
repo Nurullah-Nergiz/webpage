@@ -53,14 +53,18 @@
   .readme-description h5,
   .readme-description h6,
   .readme-description a {
-    @apply my-3 border-b border-white;
+    @apply my-3 p-2 border-b border-current;
   }
 
-  .readme-description pre code.language-bash {
-    @apply my-3 p-3 bg-secondary text-white block;
+  .readme-description pre code {
+    @apply my-3 p-3 bg-secondary text-white block list-disc;
   }
 
-  .readme-description li {
-    @apply m-2;
+  .readme-description ul>li {
+    @apply m-4
+  }
+
+  .readme-description img {
+    background:url("ass"+ attr(src))
   }
 }
