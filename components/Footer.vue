@@ -1,6 +1,6 @@
 <template>
-    <footer class="p-3 text-center shadow-inner shadow-secondary rounded-md text-xs">
-        <section class="flex items-center justify-between">
+    <footer class="mt-4 p-3 text-center shadow-inner shadow-secondary rounded-md text-xs">
+        <section class="flex flex-wrap items-center justify-between">
             <NuxtLink to="/" active-class="active" class="text-center leading-6 rounded-full flex gap-2 items-center">
                 <!-- <Logo /> -->
                 <!-- <span class="text- text-primary">NurullahNergiz</span> -->
@@ -18,7 +18,7 @@
             </div>
         </section>
         <hr class="my-2">
-        <section class="flex items-center justify-between text-xs">
+        <section class="flex flex-wrap-reverse items-center justify-between gap-4 text-xs">
             <p class="">&copy; 2024 Nurullah Nergiz. All rights reserved.</p>
             <div class="flex items-center">
                 <a href="mailto:nurullah@nergiz.me" class="bx bx-envelope px-3 py-2 hover:text-primary "></a>
