@@ -9,6 +9,18 @@ export default {
           href: `https://nurullahnergiz.com/skills`
         }
       ],
+      meta: [
+        {
+          hid: "author",
+          name: "author",
+          content: "Nurullah Nergiz",
+        },
+        {
+          // hid: "description",
+          name: "description",
+          content: "Benim yeteneklerim sayfası: Yaratıcı front-end geliştirici olarak HTML, CSS, JavaScript uzmanlığı, kullanıcı dostu arayüz tasarımı ve modern web teknolojilerinde güçlü beceriler.",
+        },
+      ],
     });
   },
   created() {

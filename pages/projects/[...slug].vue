@@ -8,24 +8,10 @@ Promise.all([
   useFetch(`https://api.github.com/repos/Nurullah-Nergiz/${params.slug[0]}/readme`),
   useFetch(`https://api.github.com/repos/Nurullah-Nergiz/${params.slug[0]}`)
 ]).then((res) => {
-  // const parser = new DOMParser();
-  // let readmeHtml = parser.parseFromString(markdownParse.convertMarkdownToHTML(res[0].data._rawValue), 'text/html').body;
-  // readmeHtml.querySelectorAll("img").forEach((img) => {
-  //     img.addEventListener('error', () => {
-  //         this.onerror = null;
-  //         this.src = 'https://placeimg.com/200/300/animals';
-  //     })
-
-  // })
-  // console.log(res[0]);
   [readme.value, repo.value] = [convertMarkdownToHTML(atob(res[0].data._rawValue.content)), res[1].data._rawValue]
 
-
-
-  // console.log(res[1].data._rawValue.topics.join(", "));
-
   useHead({
-    title: `${res[1].data._rawValue?.full_name}`,
+    title: `${res[1].data._rawValue?.full_name} - Nurullah Nergiz`,
     meta: [
       {
         name: "description",
@@ -47,26 +33,22 @@ Promise.all([
   });
 });
 
-onMounted(() => {
-  /**
-   * @type {HTMLDivElement}
-   */
-  // console.log(readmeDescription);
-  console.clear();
-  setTimeout(() => {
-    // console.log(readmeDescription);
-    readmeDescription.value.querySelectorAll("img").forEach(img => {
-      console.log(img);
-    })
-  }, 100);
-})
-
 </script>
 <template>
-  <h1 class="mb-5 px-2 py-3  flex items-center shadow-lg shadow-secondary"> <i
-      class='bx bx-chevron-right text-primary'></i>
-    {{ repo?.name }}
-  </h1>
+  <article class="mb-5 px-2 py-3  flex items-center gap-4 shadow-lg shadow-secondary">
+    <NuxtLink to="/">
+      <i class='bx bx-home-alt-2 text-primary'></i>
+      Anasayfa
+    </NuxtLink>
+    <NuxtLink to="/projects">
+      <i class='bx bx-chevron-right text-primary'></i>
+      projects
+    </NuxtLink>
+    <NuxtLink :to="`/projects/${repo.name}/${repo.default_branch}`">
+      <i class='bx bx-chevron-right text-primary'></i>
+      {{ repo?.name }}
+    </NuxtLink>
+  </article>
   <section class="flex gap-5 flex-col-reverse lg:flex-row">
     <div class="lg:w-9/12  shadow-lg shadow-secondary p-5">
       <h2 class="mb-1">{{ repo.default_branch }}/README.md</h2>

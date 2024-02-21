@@ -5,7 +5,7 @@ useFetch(`https://api.github.com/users/Nurullah-Nergiz/repos?sort=updated`).then
     repos.value = data?.data._rawValue.filter((i => i.name !== 'Nurullah-Nergiz'));
 })
 useHead({
-    title: "Nurullah Nergiz Projeler Sayfası - nurullahnergiz",
+    title: "Nurullah Nergiz Projeler Sayfası - Nurullah Nergiz",
     meta: [
         {
             name: "description",
