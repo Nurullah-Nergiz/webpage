@@ -12,7 +12,7 @@ export default {
         {
           // hid: "description",
           name: "description",
-          content: `Ben, yaratıcı bir front-end geliştirici olarak, web dünyasına özgü ve unutulmaz deneyimler sunmak üzere tasarım ve kodlama konusundaki tutkumu bir araya getiriyorum.`,
+          content: `Yaratıcı front-end geliştirici olarak, webde unutulmaz deneyimler sunma tutkumu tasarım ve kodlama ile birleştiriyorum.`,
         },
       ],
     });
@@ -21,8 +21,33 @@ export default {
 </script>
 
 <template>
+  <section class="min-h-[75vh] flex flex-wrap items-center gap-4 ">
+    <div class="flex-1">
+      <h1 class="whitespace-pre-line mb-4">Benzersiz kullanıcı arayüzü tasarımlarını keşfedin</h1>
+      <p class="mb-4">Tecrübeli bir Node.js geliştiricisinin portföyünü keşfedin, en son kullanıcı arayüzü tasarımı ve ziyaretçi analizi sergileyin.</p>
+      <span class="w-max flex flex-wrap gap-4">
+        <a href="./cv.html" download
+          class="py-2 px-3 text-gray-500 border border-primary rounded-br-xl rounded-tl-xl shadow-inner shadow-primary inline-block">
+          <i class='bx bx-download'></i>
+          CV'yi indir
+        </a>
+        <a href="./cv.html"
+          class="py-2 px-3 text-white bg-primary border border-primary rounded-br-xl rounded-tl-xl shadow-inner shadow-primary inline-block">
+          <i class='bx bx-link-external'></i>
+          CV'yi ziyaret et
+        </a>
+      </span>
+    </div>
+    <div class="flex-1">counter</div>
+  </section>
+  <article>
+    <h2 class="mb-4 text-2xl whitespace-pre-line">Hakkımızda</h2>
+    <p>Node.js geliştirme, portföy kullanıcı arayüzü tasarımı ve ziyaretçi sayım hizmetleri için hedefiniz olan Nurullahnergiz.com'a hoş geldiniz.42, Konya'da bulunan uzman ekibimiz, özel ihtiyaçlarınızı karşılamak için yüksek kaliteli çözümler sunmaya adanmıştır.</p>
+    <p>Node.js geliştirmedeki kapsamlı deneyimimiz ve uzmanlığımızla, beklentilerinizi aşan olağanüstü sonuçlar vermeye çalışıyoruz.Özel bir web uygulamasına, çarpıcı bir portföy tasarımına veya güvenilir bir ziyaretçi sayımı sistemine ihtiyacınız olsun, fikirlerinizi hayata geçirecek becerilere ve bilgiye sahibiz.Başarınızı artıran yenilikçi çözümler sunmamız için bize güvenin.</p>
+  </article>
+  <!-- 
   <section class="md:flex flex-wrap gap-6 mb-3">
-    <div class="flex-1 max-w-full p-3 shadow-sm shadow-secondary rounded-md ">
+       <div class="flex-1 max-w-full p-3 shadow-sm shadow-secondary rounded-md ">
       <h1 class="mb-2 text-3xl">Merhaba Ben Nurullah</h1>
       <p class="">
         Türkiye'den bir front-end geliştirici olarak, 2019 yılından bu yana web teknolojileriyle yoğun bir şekilde
@@ -36,18 +61,7 @@ export default {
 
         Profesyonel bir kariyere odaklanıyor ve web geliştirme alanında kendimi kanıtlamak için adım atmaya kararlıyım.
       </p>
-      <div class="my-2">
-        <a href="./cv.html" download
-          class="py-2 px-3 text-gray-500 border border-current rounded-br-xl rounded-tl-xl shadow-inner shadow-current inline-block">
-          <i class='bx bx-download'></i>
-          CV'yi indir
-        </a>
-        <a href="./cv.html"
-          class="ml-5 py-2 px-3 text-black bg-white border border-current rounded-br-xl rounded-tl-xl shadow-inner shadow-current inline-block">
-          <i class='bx bx-link-external'></i>
-          CV'yi ziyaret et
-        </a>
-      </div>
+      
     </div>
     <div class=" md:max-w-xs w-full p-3 md:px-5 flex flex-col gap-4 shadow-sm shadow-secondary rounded-md">
       <h2 class="mr-5 text-2xl">Sosyal Medya</h2>
@@ -76,5 +90,5 @@ export default {
         <span>Github</span>
       </a>
     </div>
-  </section>
+  </section> -->
 </template>
