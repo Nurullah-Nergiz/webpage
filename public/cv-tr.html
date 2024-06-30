@@ -1,252 +1,299 @@
+```html
 <!DOCTYPE html>
 <html lang="tr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="IE=edge"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Nurullah Nergiz</title>
-    <style>
-      html {
-        box-sizing: border-box;
-        font-size: 16px;
-      }
 
-      *,
-      *:before,
-      *:after {
-        box-sizing: inherit;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nurullah Nergiz</title>
+  <style>
+    @font-face {
+      font-family: "helvetica";
+      src: url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("woff"),
+        url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("opentype"),
+        url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("truetype");
+    }
 
-      body,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6,
-      p,
-      ol,
-      ul {
-        margin: 0;
-        padding: 0;
-        font-size: 1rem;
-        font-weight: normal;
-      }
+    html {
+      box-sizing: border-box;
+      font-size: 16px;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
 
-      a {
-        color: #000;
-        text-decoration: none;
-      }
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
 
-      ol,
-      ul {
-        list-style: none;
-      }
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    ol,
+    ul {
+      margin: 0;
+      padding: 0;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      font-weight: normal;
+    }
 
-      img {
-        max-width: 100%;
-        height: auto;
-      }
+    a {
+      color: #000;
+      text-decoration: none;
+    }
 
-      body {
-        width: 21cm;
-        margin: 0 auto;
-        padding: 2rem 0;
-        position: relative;
-      }
+    ol,
+    ul {
+      list-style: none;
+    }
 
-      h1 {
-        margin-bottom: 1rem;
-        font-size: 2rem;
-      }
+    li {
+      padding: 0.25rem 0;
+    }
 
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        margin-top: 1rem;
-        font-size: 1.5rem;
-      }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
 
-      .Projects ul li {
-        padding-bottom: 0.25rem;
-      }
+    body {
+      width: 21cm;
+      height: 29.7cm;
+      margin: 0 auto;
+      padding: 1rem;
+      position: relative;
+    }
 
-      .qr {
-        position: absolute;
-        top: 2rem;
-        right: 2rem;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>ÖZGEÇMİŞ</h1>
-    <ul class="w1">
-      <li>Ad ve Soyad: Nurullah Nergiz</li>
-      <li>Adres: Konya/Çumra</li>
+    h1 {
+      font-size: 2rem;
+      padding: 1rem 0;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      padding: 0.5em 0;
+      margin-bottom: 0.5em;
+      font-size: 1.5rem;
+      border-bottom: 1px solid currentColor;
+    }
+
+    .information {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .information>li {
+      width: 40%;
+    }
+
+    .information>.qr {
+      height: 6rem;
+    }
+
+    main {
+      display: flex;
+      gap: 4rem;
+    }
+
+    main>aside {
+      width: 16.5rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main>aside ul {
+      /* height: 250px; */
+    }
+
+    main>aside ul>li>span {
+      white-space: nowrap;
+    }
+
+    .projects>ul {
+      margin-bottom: 0.75rem;
+      padding: 0.5rem 1rem;
+      background: rgba(0, 0, 0, 0.16);
+      border-radius: 0.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>ÖZGEÇMİŞ</h1>
+  <header class="information">
+    <ul>
       <li>
-        E-posta:
+        <b>Adı:</b> Nurullah Nergiz
+      </li>
+      <li>
+        <b>Email:</b>
         <a href="mailto:nurullah@nergiz.me">
-          nurullah@nergiz.me</a
-        >
+          nurullah@nergiz.me</a>
       </li>
       <li>
-        Github:
-        <a
-          href="https://github.com/Nurullah-Nergiz/"
-        >
-          Nurullah-Nergiz</a
-        >
-      </li>
-      <li>
-        Website:
+        <b>Web Sitesi:</b>
         <a href="https://nurullahnergiz.com/">
-          nurullahnergiz.com</a
-        >
+          nurullahnergiz.com</a>
+      </li>
+      <!-- <li><b>Adres:</b> Konya/Çumra</li> -->
+    </ul>
+    <ul>
+      <li>
+        <b>Github:</b>
+        <a href="https://github.com/Nurullah-Nergiz/">
+          Nurullah-Nergiz</a>
       </li>
       <li>
-        Linkedin:<a
-          href="https://www.linkedin.com/in/nurullah-nergiz"
-        >
-          in/nurullah-nergiz</a
-        >
+        <b>Linkedin:</b><a href="https://www.linkedin.com/in/nurullah-nergiz">
+          in/nurullah-nergiz</a>
+      </li>
+      <li>
+        <b>Medium:</b><a href="https://medium.com/@nurullahnergiz">
+          @nurullahnergiz</a>
       </li>
     </ul>
+    <img src="data:image/gif;base64,R0lGODlhhACEAJEAAAAAAP///wAAAAAAACH5BAEAAAIALAAAAACEAIQAAAL/jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8chQNf2jedIfjO8vfvRfMIijmJM1oJCYvNgdCqLyGkUSl1cDduEtQv5ZrljbxmMFfOqwwswDWD24FK5ne5eTt4WfsC/hqcAqEfWZhiXdxjhx5aIKEe4eAcp+FdY0figKSH5eHlkSQn66YnB2eAZWNmHWadYeua6idmFGjY7mMtYKztJu2i7i/urW8wb7PtJHPvEmjksutfrTOoYqWO5SqpK3Tz3LHz8irjdnRxa7o2N/m0ebeyeHT7P7W0Kh6+ebj3d/v7vnsB27L4V1IdMHj9UCEcBXKZN2bV89Riu0zLQIMaA/wvhmeEIrl+8UQ4r7joX8tZGhSlPXhxJkeDKgy8TnnIpk161hzfHzYRFTqRQcS19OlAJs9UxhChRkvQH8ajHoCVz2uuINapNqGqKatT5dWjGro66Mq151qrZeszWqkUL963bqTHNVg2bFu9cuia2Pd3346+MD36lAeY5mEThZzSzJlbM1vDVwJJZOK1rUUnjkFQj8mNWcLMUomiSfmQ5EbDolaTLdAaL9HRozDiTbI6dGTXX2q+Frj7sFvTupbx/xnu412Ps2aYF50aeXKvg0cWbS26dXLhS25WBcfZO3ehkDlame19+PfJxvqmmmJf6GTxr5eqhae4O/3v+8NLrkv+v35RJ4gV1WSfsMScbbY4B5Zl+7Q04H3EgIbbdXegxNpxWAS5YYYMX+gZVaiBiSOKIW6lGGHsNpSdhf/v5lyKEYPWWW0+6efDhiiXWyCCKGhQollVtAVjdg5QZCNJd7522mIm4uSafj0GGNWR8O9JXjXbjNbjkbwlat56V9mkYnHEJ6ThlkyLeBmWJ/Dk31oFmspklfkzWZGF9ayrIHZhGormhi19OxqNpgRJYZJdmluZkXEcOWuigIjIa6aGLJmononVeKdejSs6ZaYRkivEmjB2GSWWG/FEqoINaIvghgnQ6CJ2MkppqYpWjflGqlHtKGauoavL5HJ4sshQsqsP/AicmhbfCpmeGyxJKJIfPphktkn3+2eaWnO7q5aTVgktsq716m2uIuMI5oUSiwiqnoeNqyuuxQCYL6byXkmpvRoqKEKilzJKrLQwBx9lui7+mcHDCyGL6ogsNP+xwbxb3eKaK3Ua37X+2ThtuudnFKKis543LMcjqapvjxilv+lix4uWlK6OW1fZkpzV3e3OLOes1sxqJySwozSffx3KZA3+adKdo7szv0lyq6qGxTdvFJ9MZO2311lhLPSPV0Aq58pizwqvz0SWXLS7S6BqdH74XR0xtVnCn6+sG+E6MNtBFZ2t21v3aSqPQ65ZN1Lk2rqrM3ginmvepd7qtsrw7seEc77VkHV6w4GF/PrmngxN8Yt1+a302qJHjne/laX/Lqs8QG+nl3UQ3SfTcrT8KaJGJqz5l27x3Xam7fj697/Bkf1v77MhbrjzkjVZ8LL0Lv5q8swLvvjjG9Gr/uPXes529uVU
+
+32zX2ndP9+9i0pq/25quXp7b6rDMeNbqpx40l6WUprT+R/U1M7Fqbsgw3P/fUL0rXeowDHwjBCEpwghSsoAUviMEManCDHOygBztQAAA7"
+      alt="Bir QR Kodu" class="qr" />
+  </header>
+  <section class="summary">
     <h2>Özet</h2>
-    <hr />
-    <div class="summary">
-      İyi bir ön yüz geliştirici olarak,
-      etkileyici ve dinamik kullanıcı deneyimleri
-      oluşturmak için çok yönlü teknoloji bilgisi
-      kullanabilirim. HTML5, CSS3 ve JavaScript
-      konularında sağlam bir temele sahibim ve web
-      tasarımlarını canlandırırken duyarlı ve
-      görsel olarak etkileyici olmalarını
-      sağlarım. Next.js ve Nuxt.js gibi
-      çerçeveleri kullanarak performans ve SEO
-      optimizasyonunu sorunsuzca entegre ederim.
-      Uzmanlığım React, Vue ve Vuex gibi
-      kütüphanelere kadar uzanır, bu da
-      etkileşimli arayüzler oluşturmamı sağlar. 3D
-      grafikler için Three.js'ten verimli stil
-      için Tailwind CSS'ye kadar her şeyi
-      kapsarım. Git'i iyi kullanabilirim, Docker
-      ve Linux sayesinde sorunsuz dağıtım
-      yapabilirim. Web veya masaüstü uygulamaları
-      olan Electron.js kullanımında da
-      başarılıyım. Kullanıcı odaklı yeniliklerin
-      alanında başarılıyım.
-    </div>
-    <h3>Projeler</h3>
-    <hr />
-    <div class="Projects">
+    <p>
+      Yetkin bir ön uç geliştirici olarak, dinamik ve çekici kullanıcı deneyimleri yaratmak için çeşitli teknolojilerden
+      oluşan çok yönlü bir araç seti kullanıyorum. HTML5, CSS3 ve JavaScript konusundaki sağlam kavrayışım sayesinde web
+      tasarımlarını hayata geçiriyor, onların duyarlı ve görsel olarak etkileyici olmasını sağlıyorum. Next.js ve Nuxt.js
+      gibi çerçeveleri kullanarak performans ve SEO optimizasyonunu sorunsuz bir şekilde entegre ediyorum. React, Vue ve
+      Vuex gibi kütüphanelerle etkileşimli arayüzler oluşturarak kullanıcılara hoş deneyimler sunuyorum. Three.js ile 3D
+      grafiklerden Tailwind CSS ile verimli stil vermeye kadar her şeyi kapsıyorum. Git konusunda yetkinim, sorunsuz
+      işbirliği yapıyorum ve Docker ve Linux ile kusursuz dağıtım yapabiliyorum. Web veya masaüstü uygulamaları
+      geliştirmekten Electron.js kullanmaya kadar kullanıcı odaklı yeniliklerde başarılı oluyorum.
+    </p>
+  </section>
+  <main>
+    <section class="projects">
+      <h3>Projeler</h3>
       <ul>
-        <li>Adı: Web Sayfası</li>
+        <li><b>Ad:</b> Web Sayfası</li>
         <li>
-          Açıklama: Ön yüz portföy uygulaması,
-          çalışmalarımı sergilediğim ve teknik
-          becerilerimi gösterdiğim bir
-          platformdur, aynı zamanda kullanıcı
-          dostu ve etkileşimli web arayüzleri
-          oluşturur.
+          <b>Açıklama:</b> Ön uç portföy uygulaması, çalışmalarımı sergilediğim ve teknik becerilerimi gösterdiğim,
+          kullanıcı dostu ve etkileşimli web arayüzleri yarattığım platformdur.
         </li>
         <li>
-          Geliştirme Araçları: Vue.js, Nuxt.js
+          <b>Geliştirme Araçları:</b>Vuejs, Nuxtjs
         </li>
         <li>
-          Website:
+          <b>Web Sitesi:</b>
           <a href="https://nurullahnergiz.com/">
             nurullahnergiz.com
           </a>
         </li>
         <li>
-          <a
-            href="https://github.com/Nurullah-Nergiz/webpage"
-          >
-            Github: Nurullah-Nergiz/webpage</a
-          >
-
-          <hr />
+          <a href="https://github.com/Nurullah-Nergiz/webpage">
+            <b>Github:</b>
+            Nurullah-Nergiz/webpage</a>
         </li>
       </ul>
       <ul>
-        <li>Adı: CLI Readme Oluşturucu</li>
+        <li><b>Ad:</b> docify-cli</li>
         <li>
-          Açıklama: CLI Readme Oluşturucu Aracı,
-          GitHub projelerinizi hızlı bir şekilde
-          belgelemek için README dosyasını
-          otomatik olarak oluşturan güçlü bir
-          komut satırı aracıdır.
-        </li>
-        <li>Geliştirme Araçları: Node.js, CLI</li>
-        <li>
-          Website:
-          <a
-            href="https://game-score-boards.netlify.app/"
-            >game-score-boards.netlify.app</a
-          >
+          <b>Açıklama:</b> CLI Readme Generator Tool, README dosyası oluşturmayı otomatikleştirerek GitHub projelerinizi
+          hızlı bir şekilde belgeleyen güçlü bir komut satırı aracıdır.
         </li>
         <li>
-          <a
-            href="https://github.com/Nurullah-Nergiz/cli-readme-generator"
-          >
-            Github:
+          <b>Geliştirme Araçları:</b>Nodejs,Cli
+        </li>
+        <li>
+          <b>Web Sitesi:</b>
+          <a href="https://www.npmjs.com/package/docify-cli">Website</a>
+        </li>
+        <li>
+          <a href="https://github.com/Nurullah-Nergiz/cli-readme-generator">
+            <b>Github:</b>
             Nurullah-Nergiz/cli-readme-generator
           </a>
-          <hr />
         </li>
       </ul>
-    </div>
-    <h4>Beceriler</h4>
-    <hr />
-    <ul>
-      <li>
-        Geliştirme Dilleri: Html5, Css3,
-        Javascript, C#, Php
-      </li>
-      <li>
-        Çerçeveler: Nextjs, Nuxtjs, Expressjs,
-        Electronjs, Asp.Net, Windows Forms
-      </li>
-      <li>
-        Kütüphaneler: React, Vue, Vuex, Vuetur,
-        Threejs, Tailwindcss
-      </li>
-      <li>Veritabanları: MySql, Mongodb</li>
-      <li>
-        Teknolojiler: Git, Docker, Bash, Linux
-      </li>
-    </ul>
-    <hr />
-    <h5>Deneyim</h5>
-    <hr />
-    <ul>
-      <li>Ribat Eğitim Vakfı</li>
-      <li>Stok yönetimi uygulaması</li>
-      <li>2019</li>
-    </ul>
-    <h6>Eğitim</h6>
-    <hr />
-    <ul class="education">
-      <li>
-        Okul: Çumra Mesleki Ve Teknik Anadolu
-        Lisesi
-      </li>
-      <li>Okul Kısmı: Bilişim Teknolojileri</li>
-      <li>Mezuniyet: 2019</li>
-    </ul>
-    <div class="qr">
-      <img
-        src="data:image/gif;base64,R0lGODlhhACEAJEAAAAAAP///wAAAAAAACH5BAEAAAIALAAAAACEAIQAAAL/jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8chQNf2jedIfjO8vfvRfMIijmJM1oJCYvNgdCqLyGkUSl1cDduEtQv5ZrljbxmMFfOqwwswDWD24FK5ne5eTt4WfsC/hqcAqEfWZhiXdxjhx5aIKEe4eAcp+FdY0figKSH5eHlkSQn66YnB2eAZWNmHWadYeua6idmFGjY7mMtYKztJu2i7i/urW8wb7PtJHPvEmjksutfrTOoYqWO5SqpK3Tz3LHz8irjdnRxa7o2N/m0ebeyeHT7P7W0Kh6+ebj3d/v7vnsB27L4V1IdMHj9UCEcBXKZN2bV89Riu0zLQIMaA/wvhmeEIrl+8UQ4r7joX8tZGhSlPXhxJkeDKgy8TnnIpk161hzfHzYRFTqRQcS19OlAJs9UxhChRkvQH8ajHoCVz2uuINapNqGqKatT5dWjGro66Mq151qrZeszWqkUL963bqTHNVg2bFu9cuia2Pd3346+MD36lAeY5mEThZzSzJlbM1vDVwJJZOK1rUUnjkFQj8mNWcLMUomiSfmQ5EbDolaTLdAaL9HRozDiTbI6dGTXX2q+Frj7sFvTupbx/xnu412Ps2aYF50aeXKvg0cWbS26dXLhS25WBcfZO3ehkDlame19+PfJxvqmmmJf6GTxr5eqhae4O/3v+8NLrkv+v35RJ4gV1WSfsMScbbY4B5Zl+7Q04H3EgIbbdXegxNpxWAS5YYYMX+gZVaiBiSOKIW6lGGHsNpSdhf/v5lyKEYPWWW0+6efDhiiXWyCCKGhQollVtAVjdg5QZCNJd7522mIm4uSafj0GGNWR8O9JXjXbjNbjkbwlat56V9mkYnHEJ6ThlkyLeBmWJ/Dk31oFmspklfkzWZGF9ayrIHZhGormhi19OxqNpgRJYZJdmluZkXEcOWuigIjIa6aGLJmononVeKdejSs6ZaYRkivEmjB2GSWWG/FEqoINaIvghgnQ6CJ2MkppqYpWjflGqlHtKGauoavL5HJ4sshQsqsP/AicmhbfCpmeGyxJKJIfPphktkn3+2eaWnO7q5aTVgktsq716m2uIuMI5oUSiwiqnoeNqyuuxQCYL6byXkmpvRoqKEKilzJKrLQwBx9lui7+mcHDCyGL6ogsNP+xwbxb3eKaK3Ua37X+2ThtuudnFKKis543LMcjqapvjxilv+lix4uWlK6OW1fZkpzV3e3OLOes1sxqJySwozSffx3KZA3+adKdo7szv0lyq6qGxTdvFJ9MZO2311lhLPSPV0Aq58pizwqvz0SWXLS7S6BqdH74XR0xtVnCn6+sG+E6MNtBFZ2t21v3aSqPQ65ZN1Lk2rqrM3ginmvepd7qtsrw7seEc77VkHV6w4GF/PrmngxN8Yt1+a302qJHjne/laX/Lqs8QG+nl3UQ3SfTcrT8KaJGJqz5l27x3Xam7fj697/Bkf1v77MhbrjzkjVZ8LL0Lv5q8swLvvjjG9Gr/uPXes529uVU32zX2ndP9+9i0pq/25quXp7b6rDMeNbqpx40l6WUprT+R/U1M7Fqbsgw3P/fUL0rXeowDHwjBCEpwghSsoAUviMEManCDHOygBztQAAA7"
-        alt="Bir QR Kodu"
-      />
-    </div>
-  </body>
+      <ul>
+        <li><b>Ad:</b> Blog Uygulaması</li>
+        <li>
+          <b>Açıklama:</b>
+          Yeni blog ön ucu kullanıcı dostu arayüzü, modern tasarımı ve hızlı yükleme süreleriyle mükemmeldir. Blogunuzu
+          minimalist, içerik odaklı bir yaklaşımla yükseltin. Şimdi deneyin!
+        </li>
+        <li>
+          <b>Geliştirme Araçları:</b>Nodejs,Cli
+        </li>
+        <li>
+          <b>Web Sitesi:</b>
+          <a href="https://blog-nurullah.vercel.app/">Website</a>
+        </li>
+        <li>
+          <a href="https://github.com/Nurullah-Nergiz/blog-frontend">
+            <b>Github:</b>
+            Blog Uygulaması
+          </a>
+        </li>
+      </ul>
+    </section>
+    <aside class="">
+      <h4>Beceriler</h4>
+      <ul>
+        <li>
+          <b>Geliştirme Dilleri:</b>
+          <span>Html5, Css3, Javascript, Typescript,
+            Php</span>
+        </li>
+        <li>
+          <b>Çerçeveler:</b> Nextjs, Nuxtjs,
+          Expressjs, Electronjs,
+        </li>
+        <li>
+          <b>Kütüphaneler:</b> React, Vue, Vuex,
+          Vuetur, Threejs, Tailwindcss,
+        </li>
+        <li>
+          <b>Veritabanları:</b> MySql, Mongodb
+        </li>
+        <li>
+          <b>Teknolojiler:</b> Git, Docker,
+          Bash, Linux
+        </li>
+      </ul>
+      <h5>Deneyim</h5>
+      <ul>
+        <li>Ribat Eğitim Vakfı</li>
+        <li>
+          Bu Windows Forms uygulaması, envanter yönetimi için bir SQL veritabanı kullanır. Ürün ekleme, güncelleme,
+          silme ve arama için kullanıcı dostu bir arayüze sahiptir. Stok takibi ve raporlama yetenekleri içerir, bu da
+          envanter verimliliğini artırır.
+        </li>
+        <li>2019</li>
+      </ul>
+      <h6>Eğitim</h6>
+      <ul class="education">
+        <li>
+          <b>Okul:</b>Çumra Mesleki Ve Teknik Anadolu Lisesi
+        </li>
+        <li>
+          <b>Bölüm:</b> Bilişim Teknolojileri
+        </li>
+        <li><b>Mezuniyet:</b> 2019</li>
+      </ul>
+    </aside>
+  </main>
+</body>
+
 </html>
+```
