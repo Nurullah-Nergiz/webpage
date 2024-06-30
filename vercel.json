@@ -2,17 +2,8 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/*.js",
-      "use": "@vercel/node"
+      "src": "nuxt.config.js",
+      "use": "@nuxtjs/vercel-builder"
     }
-  ],
-  "routes": [
-    {
-      "src": "/api/my-function",
-      "dest": "/api/my-function.js"
-    }
-  ],
-  "env": {
-    "DISABLE_MY_FUNCTION": "true"
-  }
+  ]
 }
