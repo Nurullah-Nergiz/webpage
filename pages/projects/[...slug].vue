@@ -10,6 +10,7 @@ Promise.all([
 ]).then((res) => {
   [readme.value, repo.value] = [convertMarkdownToHTML(atob(res[0].data._rawValue.content)), res[1].data._rawValue]
 
+  /**
   useHead({
     title: `${res[1].data._rawValue?.full_name} - Nurullah Nergiz`,
     meta: [
@@ -31,6 +32,7 @@ Promise.all([
       }
     ],
   });
+  */
 });
 
 </script>
