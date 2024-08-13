@@ -10,8 +10,7 @@ Promise.all([
 ]).then((res) => {
   [readme.value, repo.value] = [convertMarkdownToHTML(atob(res[0].data._rawValue.content)), res[1].data._rawValue]
 
-  /**
-  useHead({
+  useSeoMeta({
     title: `${res[1].data._rawValue?.full_name} - Nurullah Nergiz`,
     meta: [
       {
@@ -32,7 +31,6 @@ Promise.all([
       }
     ],
   });
-  */
 });
 
 </script>
@@ -57,7 +55,7 @@ Promise.all([
       <div v-html="readme" ref="readmeDescription" class="readme-description"> </div>
     </div>
     <aside class="lg:max-w-xs  h-min shadow-lg shadow-secondary p-4 flex flex-col gap-3">
-      <span>About</span>
+      <span v-if="repo?.description">About</span>
       <p>{{ repo?.description }}</p>
       <hr>
       <span>Home Page</span>
@@ -69,7 +67,7 @@ Promise.all([
       <a :href="repo?.html_url" class='bx bxl-github flex gap-2 items-center text-white'>
         {{ repo?.full_name }}
       </a>
-      <span>Topics </span>
+      <span v-if="repo?.topics">Topics </span>
       <a v-for="item in repo?.topics" :href="`https://github.com/topics/${item}`">
         <i class='bx bx-chevron-right text-primary'></i>
         {{ item.replaceAll("-", " ") }}
