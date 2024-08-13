@@ -6,7 +6,7 @@
                 <!-- <span class="text- text-primary">NurullahNergiz</span> -->
             </NuxtLink>
             <div class="text-xs">
-                <a href="https://blog.nurullahnergiz.com/">
+                <a href="https://medium.com/@nurullahnergiz/" target="_blank" class="px-1 ">
                     Blog
                 </a>
                 <a href="https://github.com/Nurullah-Nergiz/webpage/issues/new" class="px-1" target="_blank">
@@ -24,11 +24,12 @@
                 <a href="mailto:nurullah@nergiz.me" class="bx bx-envelope px-3 py-2 hover:text-primary "></a>
                 <a href="https://www.linkedin.com/in/nurullah-nergiz/" target="_blank"
                     class="bx bxl-linkedin px-3 py-2 hover:text-primary "></a>
-                <a href="https://github.com/Nurullah-Nergiz/" target="_blank" class="bx bxl-github px-3 py-2 hover:text-primary "></a>
-                <a href="https://github.com/Nurullah-Nergiz/" target="_blank" class="bx bxl-medium px-3 py-2 hover:text-primary "></a>
-                <a href="https://twitter.com/nurullahNergiz_" target="_blank" class="bx bxl-twitter px-3 py-2 hover:text-primary "></a>
-                <a href="https://www.instagram.com/nurullahnergiz_/" target="_blank" class="bx bxl-instagram px-3 py-2 hover:text-primary "></a>
+                <a href="https://github.com/Nurullah-Nergiz/" target="_blank"
+                    class="bx bxl-github px-3 py-2 hover:text-primary "></a>
+                <a href="https://twitter.com/nurullahNergiz_" target="_blank"
+                    class="bx bxl-twitter px-3 py-2 hover:text-primary "></a>
+                <a href="https://www.instagram.com/nurullahnergiz_/" target="_blank"
+                    class="bx bxl-instagram px-3 py-2 hover:text-primary "></a>
             </div>
         </section>
-    </footer>
-</template>
+</footer></template>
