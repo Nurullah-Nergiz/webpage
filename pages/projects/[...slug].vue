@@ -10,27 +10,27 @@ Promise.all([
 ]).then((res) => {
   [readme.value, repo.value] = [convertMarkdownToHTML(atob(res[0].data._rawValue.content)), res[1].data._rawValue]
 
-  useSeoMeta({
-    title: `${res[1].data._rawValue?.full_name} - Nurullah Nergiz`,
-    meta: [
-      {
-        name: "description",
-        content: `
-        ${res[1].data._rawValue?.description ?? (params.slug[0] + " - Modern ve etkileyici web tasarımıyla kullanıcı deneyimini zirveye taşıyan bir proje. Örneklerimizi keşfedin ve ilham alın!")}
-                        `,
-      },
-      {
-        name: "keywords",
-        content: ["nurullah nergiz", ...res[1].data._rawValue?.topics].join(", ")
-      }
-    ],
-    link: [
-      {
-        rel: "canonical",
-        href: `https://nurullahnergiz.com/projects/${params.slug[0]}/${params.slug[1]}`
-      }
-    ],
-  });
+  // useSeoMeta({
+  //   title: `${res[1].data._rawValue?.full_name} - Nurullah Nergiz`,
+  //   meta: [
+  //     {
+  //       name: "description",
+  //       content: `
+  //       ${res[1].data._rawValue?.description ?? (params.slug[0] + " - Modern ve etkileyici web tasarımıyla kullanıcı deneyimini zirveye taşıyan bir proje. Örneklerimizi keşfedin ve ilham alın!")}
+  //                       `,
+  //     },
+  //     {
+  //       name: "keywords",
+  //       content: ["nurullah nergiz", ...res[1].data._rawValue?.topics].join(", ")
+  //     }
+  //   ],
+  //   link: [
+  //     {
+  //       rel: "canonical",
+  //       href: `https://nurullahnergiz.com/projects/${params.slug[0]}/${params.slug[1]}`
+  //     }
+  //   ],
+  // });
 });
 
 </script>
