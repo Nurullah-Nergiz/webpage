@@ -64,7 +64,7 @@
     @apply m-4
   }
 
-  .readme-description img {
+  /* .readme-description img {
     background:url("ass"+ attr(src))
-  }
+  } */
 }

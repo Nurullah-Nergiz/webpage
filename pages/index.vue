@@ -24,7 +24,8 @@ export default {
   <section class="min-h-[75vh] flex flex-wrap items-center gap-4 ">
     <div class="flex-1">
       <h1 class="whitespace-pre-line mb-4">Benzersiz kullanıcı arayüzü tasarımlarını keşfedin</h1>
-      <p class="mb-4">Tecrübeli bir Node.js geliştiricisinin portföyünü keşfedin, en son kullanıcı arayüzü tasarımı ve ziyaretçi analizi sergileyin.</p>
+      <p class="mb-4">Tecrübeli bir Node.js geliştiricisinin portföyünü keşfedin, en son kullanıcı arayüzü tasarımı ve
+        ziyaretçi analizi sergileyin.</p>
       <span class="w-max flex flex-wrap gap-4">
         <a href="./cv.html" download
           class="py-2 px-3 text-gray-500 border border-primary rounded-br-xl rounded-tl-xl shadow-inner shadow-primary inline-block">
@@ -38,12 +39,19 @@ export default {
         </a>
       </span>
     </div>
-    <div class="flex-1">counter</div>
+    <div class="flex-1">
+      <img src="https://visitcount.itsvg.in/api?id=nurullahnergiz.com&label=%20&color=transparent&logo=appveyor" alt="">
+    </div>
   </section>
   <article>
     <h2 class="mb-4 text-2xl whitespace-pre-line">Hakkımızda</h2>
-    <p>Node.js geliştirme, portföy kullanıcı arayüzü tasarımı ve ziyaretçi sayım hizmetleri için hedefiniz olan Nurullahnergiz.com'a hoş geldiniz.42, Konya'da bulunan uzman ekibimiz, özel ihtiyaçlarınızı karşılamak için yüksek kaliteli çözümler sunmaya adanmıştır.</p>
-    <p>Node.js geliştirmedeki kapsamlı deneyimimiz ve uzmanlığımızla, beklentilerinizi aşan olağanüstü sonuçlar vermeye çalışıyoruz.Özel bir web uygulamasına, çarpıcı bir portföy tasarımına veya güvenilir bir ziyaretçi sayımı sistemine ihtiyacınız olsun, fikirlerinizi hayata geçirecek becerilere ve bilgiye sahibiz.Başarınızı artıran yenilikçi çözümler sunmamız için bize güvenin.</p>
+    <p>Node.js geliştirme, portföy kullanıcı arayüzü tasarımı ve ziyaretçi sayım hizmetleri için hedefiniz olan
+      Nurullahnergiz.com'a hoş geldiniz.42, Konya'da bulunan uzman ekibimiz, özel ihtiyaçlarınızı karşılamak için yüksek
+      kaliteli çözümler sunmaya adanmıştır.</p>
+    <p>Node.js geliştirmedeki kapsamlı deneyimimiz ve uzmanlığımızla, beklentilerinizi aşan olağanüstü sonuçlar vermeye
+      çalışıyoruz.Özel bir web uygulamasına, çarpıcı bir portföy tasarımına veya güvenilir bir ziyaretçi sayımı sistemine
+      ihtiyacınız olsun, fikirlerinizi hayata geçirecek becerilere ve bilgiye sahibiz.Başarınızı artıran yenilikçi
+      çözümler sunmamız için bize güvenin.</p>
   </article>
   <!-- 
   <section class="md:flex flex-wrap gap-6 mb-3">
@@ -90,5 +98,4 @@ export default {
         <span>Github</span>
       </a>
     </div>
-  </section> -->
-</template>
+  </section> --></template>
