@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /_nuxt/
 
 Sitemap: https://nurullahnergiz.com/sitemap.xml
